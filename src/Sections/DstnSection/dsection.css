@@ -1,0 +1,13 @@
+@font-face {
+    font-family: cential;
+    src: url(../../../public/Font/Cential.OTF);
+  }
+@font-face {
+    font-family:Alayna;
+    src: url(../../../public/Font/Alayna.OTF);
+  }
+.DestinationContainer{
+  /* display: flex; */
+  /* justify-content: center; */
+   background-color: rgb(254, 201, 22);;
+  }

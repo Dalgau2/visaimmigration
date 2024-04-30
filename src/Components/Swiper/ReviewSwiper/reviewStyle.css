@@ -1,0 +1,20 @@
+.myReviewSwiperr {
+    width: 100px;
+    height: 100%;
+    border: 2px solid black;
+  }
+  
+  .mySwiperSlideOfReview {
+    min-width: 200px;
+    height: 370px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 20px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

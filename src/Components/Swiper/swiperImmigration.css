@@ -1,0 +1,41 @@
+/* .swiper-slide.swiper-slide-active.slideOFimmigration.swiper-slide-visible.swiper-slide-fully-visible {
+  transform: scale(1.2) !important;
+  z-index: 2;
+  margin-left: 30px;
+  margin-right: 15px;
+} */
+
+.mySwiperForImmigration {
+  /* width: 100%; */
+  /* height: 400px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mySwiperslideForImmigration {
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  max-width: 250px;
+  height: 300px;
+  border-radius: 22px;
+  margin-right: 8px;
+  margin-left: 2px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center ;
+  background-color:white !important;
+  z-index: 999 !important;
+}
+.swiper-slide.swiper-slide-active.mySwiperslideForImmigration.swiper-slide-visible.swiper-slide-fully-visible {
+  height: 300px;
+  z-index: 100 !important;
+  transform: scale(1.2) !important;
+  margin-right: 40px;
+  margin-left: 30px;
+  max-width: 250px;
+  background: white;
+}
+/* .swiper-wrapper {
+  position: absolute;
+} */

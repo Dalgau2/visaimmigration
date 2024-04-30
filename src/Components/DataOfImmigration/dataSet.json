@@ -1,0 +1,307 @@
+[
+    {
+      "id": 1,
+      "countryName": "Canada",
+      "flightArrivalDateTime": "2024-05-10T14:00:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Pending",
+      "price": 500,
+      "imageUrl": "https://example.com/canada.jpg"
+    },
+    {
+      "id": 2,
+      "countryName": "United Kingdom",
+      "flightArrivalDateTime": "2024-06-15T08:30:00Z",
+      "visaType": "Student Visa",
+      "travelReason": "Education",
+      "applicationStatus": "Approved",
+      "price": 600,
+      "imageUrl": "https://example.com/uk.jpg"
+    },
+    {
+      "id": 3,
+      "countryName": "Australia",
+      "flightArrivalDateTime": "2024-07-20T12:15:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Leisure",
+      "applicationStatus": "Denied",
+      "denialReason": "Incomplete documentation",
+      "price": 700,
+      "imageUrl": "https://example.com/australia.jpg"
+    },
+    {
+      "id": 4,
+      "countryName": "France",
+      "flightArrivalDateTime": "2024-08-25T09:45:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Approved",
+      "price": 550,
+      "imageUrl": "https://example.com/france.jpg"
+    },
+    {
+      "id": 5,
+      "countryName": "Japan",
+      "flightArrivalDateTime": "2024-09-30T11:30:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Sightseeing",
+      "applicationStatus": "Pending",
+      "price": 800,
+      "imageUrl": "https://example.com/japan.jpg"
+    },
+    {
+      "id": 6,
+      "countryName": "United States",
+      "flightArrivalDateTime": "2024-10-05T16:00:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Conference",
+      "applicationStatus": "Approved",
+      "price": 650,
+      "imageUrl": "https://example.com/usa.jpg"
+    },
+    {
+      "id": 7,
+      "countryName": "Germany",
+      "flightArrivalDateTime": "2024-11-10T14:30:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Denied",
+      "denialReason": "Insufficient funds",
+      "price": 700,
+      "imageUrl": "https://example.com/germany.jpg"
+    },
+    {
+      "id": 8,
+      "countryName": "Italy",
+      "flightArrivalDateTime": "2024-12-15T10:00:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Vacation",
+      "applicationStatus": "Approved",
+      "price": 600,
+      "imageUrl": "https://example.com/italy.jpg"
+    },
+    {
+      "id": 9,
+      "countryName": "Spain",
+      "flightArrivalDateTime": "2025-01-20T12:45:00Z",
+      "visaType": "Student Visa",
+      "travelReason": "Education",
+      "applicationStatus": "Pending",
+      "price": 750,
+      "imageUrl": "https://example.com/spain.jpg"
+    },
+    {
+      "id": 10,
+      "countryName": "China",
+      "flightArrivalDateTime": "2025-02-25T15:30:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Meeting",
+      "applicationStatus": "Approved",
+      "price": 700,
+      "imageUrl": "https://example.com/china.jpg"
+    },
+    {
+      "id": 11,
+      "countryName": "Brazil",
+      "flightArrivalDateTime": "2025-03-30T17:15:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Beach Vacation",
+      "applicationStatus": "Approved",
+      "price": 800,
+      "imageUrl": "https://example.com/brazil.jpg"
+    },
+    {
+      "id": 12,
+      "countryName": "India",
+      "flightArrivalDateTime": "2025-04-05T18:30:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Client Meeting",
+      "applicationStatus": "Pending",
+      "price": 850,
+      "imageUrl": "https://example.com/india.jpg"
+    },
+    {
+      "id": 13,
+      "countryName": "South Africa",
+      "flightArrivalDateTime": "2025-05-10T08:45:00Z",
+      "visaType": "Visitor Visa",
+      "travelReason": "Family Visit",
+      "applicationStatus": "Approved",
+      "price": 900,
+      "imageUrl": "https://example.com/south-africa.jpg"
+    },
+    {
+      "id": 14,
+      "countryName": "Mexico",
+      "flightArrivalDateTime": "2025-06-15T10:00:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Vacation",
+      "applicationStatus": "Approved",
+      "price": 750,
+      "imageUrl": "https://example.com/mexico.jpg"
+    },
+    {
+      "id": 15,
+      "countryName": "Russia",
+      "flightArrivalDateTime": "2025-07-20T12:30:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Denied",
+      "denialReason": "Expired passport",
+      "price": 700,
+      "imageUrl": "https://example.com/russia.jpg"
+    },
+    {
+      "id": 16,
+      "countryName": "Singapore",
+      "flightArrivalDateTime": "2025-08-25T14:45:00Z",
+      "visaType": "Student Visa",
+      "travelReason": "Education",
+      "applicationStatus": "Approved",
+      "price": 650,
+      "imageUrl": "https://example.com/singapore.jpg"
+    },
+    {
+      "id": 17,
+      "countryName": "New Zealand",
+      "flightArrivalDateTime": "2025-09-30T16:00:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Adventure",
+      "applicationStatus": "Pending",
+      "price": 800,
+      "imageUrl": "https://example.com/new-zealand.jpg"
+    },
+    {
+      "id": 18,
+      "countryName": "Thailand",
+      "flightArrivalDateTime": "2025-10-05T18:15:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Exploration",
+      "applicationStatus": "Approved",
+      "price": 700,
+      "imageUrl": "https://example.com/thailand.jpg"
+    },
+    {
+      "id": 19,
+      "countryName": "Malaysia",
+      "flightArrivalDateTime": "2025-11-10T10:30:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Conference",
+      "applicationStatus": "Pending",
+      "price": 750,
+      "imageUrl": "https://example.com/malaysia.jpg"
+    },
+    {
+      "id": 20,
+      "countryName": "Sweden",
+      "flightArrivalDateTime": "2025-12-15T12:45:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Vacation",
+      "applicationStatus": "Approved",
+      "price": 600,
+      "imageUrl": "https://example.com/sweden.jpg"
+    },
+    {
+      "id": 21,
+      "countryName": "Greece",
+      "flightArrivalDateTime": "2026-01-20T14:00:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Sightseeing",
+      "applicationStatus": "Pending",
+      "price": 700,
+      "imageUrl": "https://example.com/greece.jpg"
+    },
+    {
+      "id": 22,
+      "countryName": "Netherlands",
+      "flightArrivalDateTime": "2026-02-25T15:30:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Approved",
+      "price": 800,
+      "imageUrl": "https://example.com/netherlands.jpg"
+    },
+    {
+      "id": 23,
+      "countryName": "Argentina",
+      "flightArrivalDateTime": "2026-03-30T17:45:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Adventure",
+      "applicationStatus": "Approved",
+      "price": 750,
+      "imageUrl": "https://example.com/argentina.jpg"
+    },
+    {
+      "id": 24,
+      "countryName": "Norway",
+      "flightArrivalDateTime": "2026-04-05T10:00:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Meeting",
+      "applicationStatus": "Pending",
+      "price": 850,
+      "imageUrl": "https://example.com/norway.jpg"
+    },
+    {
+      "id": 25,
+      "countryName": "Switzerland",
+      "flightArrivalDateTime": "2026-05-10T12:15:00Z",
+      "visaType": "Student Visa",
+      "travelReason": "Education",
+      "applicationStatus": "Approved",
+      "price": 600,
+      "imageUrl": "https://example.com/switzerland.jpg"
+    },
+    {
+      "id": 26,
+      "countryName": "Portugal",
+      "flightArrivalDateTime": "2026-06-15T14:30:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Vacation",
+      "applicationStatus": "Denied",
+      "denialReason": "Insufficient travel history",
+      "price": 700,
+      "imageUrl": "https://example.com/portugal.jpg"
+    },
+    {
+      "id": 27,
+      "countryName": "Denmark",
+      "flightArrivalDateTime": "2026-07-20T16:45:00Z",
+      "visaType": "Work Permit",
+      "travelReason": "Employment",
+      "applicationStatus": "Approved",
+      "price": 800,
+      "imageUrl": "https://example.com/denmark.jpg"
+    },
+    {
+      "id": 28,
+      "countryName": "Ireland",
+      "flightArrivalDateTime": "2026-08-25T08:00:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Exploration",
+      "applicationStatus": "Approved",
+      "price": 650,
+      "imageUrl": "https://example.com/ireland.jpg"
+    },
+    {
+      "id": 29,
+      "countryName": "Austria",
+      "flightArrivalDateTime": "2026-09-30T10:30:00Z",
+      "visaType": "Business Visa",
+      "travelReason": "Conference",
+      "applicationStatus": "Pending",
+      "price": 750,
+      "imageUrl": "https://example.com/austria.jpg"
+    },
+    {
+      "id": 30,
+      "countryName": "Belgium",
+      "flightArrivalDateTime": "2026-10-05T12:45:00Z",
+      "visaType": "Tourist Visa",
+      "travelReason": "Vacation",
+      "applicationStatus": "Approved",
+      "price": 600,
+      "imageUrl": "https://example.com/belgium.jpg"
+    }
+  ]
+  

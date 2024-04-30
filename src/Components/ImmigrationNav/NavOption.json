@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "navlink": "Package",
+    "href": "/package"
+  },
+  {
+    "id": "2",
+    "navlink": "Popular package",
+    "href": "/popularpackage"
+  },
+  {
+    "id": "3",
+    "navlink": "Services",
+    "href": "/services"
+  },
+  {
+    "id": "4",
+    "navlink": "About",
+    "href": "/about"
+  }
+  
+]

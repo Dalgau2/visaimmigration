@@ -1,0 +1,17 @@
+.navBar.active{
+    height: 110px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  }
+.navbarTrue.active{
+   background-color: rgb(255, 255, 255);
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   transition: 0.3s ease-in-out
+}
+.navLinkOfImmigration.active{
+    display: none;
+}
