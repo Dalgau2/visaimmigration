@@ -10,6 +10,7 @@ import SearchBarForImmigration from "./Components/ReusebleSearchBar/searchBar.js
 import FooterOfImmigration from "./Sections/Footer/FooterSection.jsx";
 import PartnerBrand from "./Sections/PartnerShip/PartnerShipSection.jsx";
 import ExploarDestination from "./Sections/DstnSection/Destination.jsx";
+import OurSuccessSection from "./Sections/Success/SuccessSection.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -26,8 +27,7 @@ export const theme = createTheme({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-   <ExploarDestination/>
-   {/* <App/> */}
+      <App/>
     </ThemeProvider>
   </React.StrictMode>
 );

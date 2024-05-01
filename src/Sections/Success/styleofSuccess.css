@@ -14,3 +14,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (max-width: 1200px) { /* Target screens up to and including md */
+    .successImage {
+      width: 100%; /* Set width to 100% for smaller screens */
+    }
+  }

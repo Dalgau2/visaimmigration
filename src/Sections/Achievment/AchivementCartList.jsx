@@ -5,9 +5,12 @@ const AchivementCardList = () => {
   return (
     <Box
       sx={{
-        display: "grid",
-        gridTemplateColumns: `repeat(4,0.3fr)`,
+        display:{xs:"flex",sm:"grid",md:"grid",lg:"grid",xl:"grid"},
+        flexDirection:{xs:"column"},
+        gridTemplateColumns:{sm:`repeat(2,0.3fr)`,md:`repeat(3,0.3fr)`,lg:`repeat(4,0.3fr)`,xl:`repeat(7,0.3fr)`},
         gap: "12px",
+        justifyContent:"center",
+        justifyItems:"center",
         alignItems: "center",
       }}
     >

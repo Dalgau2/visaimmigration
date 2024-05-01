@@ -1,10 +1,11 @@
 import { Box, Typography } from "@mui/material";
 const AchivementCard = ({ data }) => {
   return (
-    <Box>
+    // <Box>
       <Box
         sx={{
-          height: "150px",
+          width:{xs:"300px",xl:"400px"},
+          height: {xs:"160px",sm:"150px",md:"150px",lg:"150px",xl:"150px"},
           borderRadius: "15px",
           display: "flex",
           justifyContent: "center",
@@ -22,7 +23,7 @@ const AchivementCard = ({ data }) => {
         </Typography>
         <Typography>{data.navlink}</Typography>
       </Box>
-    </Box>
+    // </Box>
   );
 };
 export default AchivementCard;

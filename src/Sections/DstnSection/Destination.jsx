@@ -26,32 +26,30 @@ const ExploarDestination = () => {
         </Typography>
         <Box
           sx={{
-            
             height: { xs: "50px", lg: "80px", md: "90px" },
             display: "flex",
             alignItems: "center",
-            paddingTop: {xs:"20px",sm:"20px",md:"29px", lg: "29px" },
+            paddingTop: { xs: "20px", sm: "20px", md: "29px", lg: "29px" },
+           
           }}
         >
           <Box
             className="searchBarOfHearderSection"
             sx={{
               marginTop: { xs: "10px", lg: "0px", md: "0px", sm: "10px" },
-
             }}
           >
             <Box
               component={Paper}
               elevation={4}
               sx={{
-                width: { lg: "450px", md: "400px", sm: "390px", xs: "300px" },
+                width: { lg: "400px", md: "390px", sm: "380px", xs: "300px" },
                 height: { lg: "50px", md: "45px", sm: "40px", xs: "35px" },
                 borderRadius: "60px",
                 display: "flex",
                 justifyContent: "space-evenly",
                 alignItems: "center",
                 boxShadow: "101",
-               
               }}
             >
               <Button
@@ -63,10 +61,9 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "20px" },
-                  padding: { xs: "5px",md:"7px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "18px" },
+                  padding: { xs: "5px", md: "7px" },
                   lineHeight: { xs: "15px" },
-                  
                 }}
               >
                 All
@@ -81,8 +78,8 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "20px" },
-                  padding: { xs: "5px",md:"7px",sm:"9px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px",lg: "18px" },
+                  padding: { xs: "5px", md: "7px", sm: "9px" },
                   lineHeight: { xs: "15px" },
                 }}
               >
@@ -98,8 +95,8 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "20px" },
-                  padding: { xs: "5px",md:"7px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "18px" },
+                  padding: { xs: "5px", md: "7px" },
                   lineHeight: { xs: "15px" },
                 }}
               >
@@ -116,8 +113,8 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "20px" },
-                  padding: { xs: "5px",md:"7px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px",lg: "18px" },
+                  padding: { xs: "5px", md: "7px" },
                   lineHeight: { xs: "15px" },
                 }}
               >
@@ -129,11 +126,18 @@ const ExploarDestination = () => {
       </Box>
       {/* End Pont of Button section */}
       <Box
+        
         sx={{
-          display:{xs:"grid",sm:"grid",md:"grid",lg:"grid",xl:"grid"},
-          justifyItems:"center",
+          display: {
+            xs: "grid",
+            sm: "grid",
+            md: "grid",
+            lg: "grid",
+            xl: "grid",
+          },
+          justifyItems: "center",
           gap: "10px",
-          padding:"30px",
+          padding: "30px",
           gridTemplateColumns: "repeat(5,1fr)",
           gridTemplateColumns: {
             xl: "repeat(7,1fr)",
@@ -141,7 +145,7 @@ const ExploarDestination = () => {
             md: "repeat(4,1fr)",
             sm: "repeat(2,1fr)",
             sx: "repeat(1,1fr)",
-            xs:"repeate(1,2fr)"
+            xs: "repeate(1,2fr)",
           },
         }}
       >
