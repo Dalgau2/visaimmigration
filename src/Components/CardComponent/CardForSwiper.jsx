@@ -12,11 +12,12 @@ const SwiperCardForImmigration = ({ data }) => {
     >
       <Card
         sx={{
-          maxWidth: 300,
+          maxWidth:{xl:"400px",lg:"300px"},
           padding: 1,
-          height: "300px",
+          height:"310px",
           borderRadius: "25px",
           backgroundColor: "white",
+          height:{xl:"400px",lg:"310px",sm:"310px",md:"310px",xs:"310px"}
           // border: "2px solid black",
         }}
       >
@@ -28,7 +29,7 @@ const SwiperCardForImmigration = ({ data }) => {
           sx={{
             backgroundColor: "white",
             marginRight: "15px",
-            borderRadius: "10px",
+            borderRadius: "19px",
           }}
         />
         <Box sx={{ marginTop: "5px" }}>
