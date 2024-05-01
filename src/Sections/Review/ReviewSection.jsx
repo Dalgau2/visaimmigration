@@ -21,11 +21,11 @@ const OurReviewsSection = () => {
             position: "absolute",
             top: "50%",
             color: "white",
-            fontSize: "80px",
+            fontSize:{ xs:"40px",lg:"80px"},
             fontFamily: "Alayna",
             fontWeight: "700",
             borderBottom: "10px solid rgb(254, 201, 22);",
-            height: "95px",
+            height: {xs:"55px",lg:"95px"},
           }}
         >
           Review & Testimonial
