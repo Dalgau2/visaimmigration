@@ -57,9 +57,9 @@ const SwiperOfReviewSection = () => {
         {data.map((d) => {
           return (
             <>
-              <SwiperSlide className="mySwiperSlideOfReview">
+              {/* <SwiperSlide className="mySwiperSlideOfReview">
                 <ReviewCardOfImmigration/>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </>
           );
         })}
