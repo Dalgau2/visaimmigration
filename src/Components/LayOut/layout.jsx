@@ -12,7 +12,7 @@ const LayoutOfImmigration=()=>{
             <Outlet/>
           </Box>
           <Box className="footer">
-            <FooterOfImmigration/>
+            {/* <FooterOfImmigration/> */}
           </Box>
         </Box>
     )

@@ -4,8 +4,8 @@ const AchivementCard = ({ data }) => {
     // <Box>
       <Box
         sx={{
-          width:{xs:"400px",xl:"300px",sm:"400px",md:"300px"},
-          height: {xs:"200px",sm:"150px",md:"150px",lg:"150px",xl:"150px"},
+          width:{xs:"160px",xl:"300px",sm:"400px",md:"300px"},
+          height: {xs:"90px",sm:"150px",md:"150px",lg:"150px",xl:"150px"},
           borderRadius: "15px",
           display: "flex",
           justifyContent: "center",
