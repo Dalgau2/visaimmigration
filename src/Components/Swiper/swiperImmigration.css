@@ -16,7 +16,7 @@
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  max-width: 250px;
+  max-width:250px;
   height: 300px;
   border-radius: 22px;
   margin-right: 8px;
@@ -36,6 +36,46 @@
   max-width: 250px;
   background: white;
 }
-/* .swiper-wrapper {
-  position: absolute;
-} */
+@media (max-width:425px) {
+  .mySwiperslideForImmigration {
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    max-width:290px;
+    height: 300px;
+    border-radius: 22px;
+    margin-right:13px;
+    margin-left:12px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center ;
+    background-color:white !important;
+    z-index: 999 !important;
+  }
+  .swiper-slide.swiper-slide-active.mySwiperslideForImmigration.swiper-slide-visible.swiper-slide-fully-visible {
+    height: 300px;
+    z-index: 100 !important;
+    transform: scale(1.2) !important;
+    margin-right: 40px;
+    margin-left: 30px;
+    max-width: 250px;
+    background: white;
+  }
+  .mySwiperForImmigration{
+    padding-top: 70px;
+    padding-left:5px;
+  }
+}
+
+/* You can add more media query rules for other screen sizes here */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Styles for medium screens */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Styles for large screens */
+}
+
+@media (min-width: 1200px) {
+  /* Styles for extra large screens */
+}

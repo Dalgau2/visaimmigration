@@ -16,7 +16,12 @@ const HomePageForImmigration = () => {
           <Box className="headerTitleSection">
             <Box>
               <Typography
-                sx={{ fontFamily: "juana", fontSize: "55px", fontWeight: 700 }}
+                sx={{
+                  fontFamily: "juana",
+                  fontSize: { xs: "30px", lg: "53px" },
+                  fontWeight: 700,
+                  padding: { xs: "30px" },
+                }}
               >
                 Helping you Travel Beyond Boundaries and Borders
               </Typography>
@@ -38,17 +43,11 @@ const HomePageForImmigration = () => {
         <ExploarDestination />
       </Box>
       {/* AchivmentSection */}
-      <Box sx={{ padding: "40px" }}>
-        <OurAchievements />
-      </Box>
+      <Box sx={{ padding: "40px" }}><OurAchievements /></Box>
       {/* Success Section */}
-      <Box>
-        <OurSuccessSection />
-      </Box>
+      <Box><OurSuccessSection /></Box>
       {/* ReviewSection */}
-      <Box>
-        <OurReviewsSection />
-      </Box>
+      <Box><OurReviewsSection /></Box>
       {/* <Box>
         <FooterOfImmigration />
       </Box> */}

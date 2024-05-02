@@ -20,10 +20,10 @@ const SwiperImmigration = () => {
     >
       <Swiper
         effect={"coverflow"}
-        //  autoplay={{
-        //    delay: 2500,
-        //    disableOnInteraction: false,
-        //  }}
+         autoplay={{
+           delay: 1000,
+           disableOnInteraction: false,
+         }}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
