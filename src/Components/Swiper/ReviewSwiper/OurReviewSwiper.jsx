@@ -35,21 +35,21 @@ const SwiperOfReviewSection = () => {
         // breakpoints
 
         breakpoints={{
-          344:{
+          320:{
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween:10,
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween:10,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 1,
+            spaceBetween:20,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            slidesPerView:1,
+            spaceBetween:30,
           },
         }}
         className="myReviewSwiper"
@@ -57,9 +57,9 @@ const SwiperOfReviewSection = () => {
         {data.map((d) => {
           return (
             <>
-              {/* <SwiperSlide className="mySwiperSlideOfReview">
+              <SwiperSlide className="mySwiperSlideOfReview">
                 <ReviewCardOfImmigration/>
-              </SwiperSlide> */}
+              </SwiperSlide>
             </>
           );
         })}

@@ -1,5 +1,5 @@
 import { Box, Button, Paper } from "@mui/material";
-import "../../Pages/HomePage/homepage.css";
+import "../ReusebleSearchBar/styleOfSearchBar.css"
 const SearchBarForImmigration = ({ buttonName, placeHolderName }) => {
   return (
     <Box className="searchBarOfHearderSection">
@@ -7,8 +7,8 @@ const SearchBarForImmigration = ({ buttonName, placeHolderName }) => {
         component={Paper}
         elevation={4}
         sx={{
-          width: {xs:"300px",sm:"300px",md:"550px",lg:"545px"},
-          height:{xs:"40px",sm:"55px",md:"60px",lg:"50px"},
+          width: {xs:"230px",sm:"550px",md:"550px",lg:"545px"},
+          height:{xs:"25px",sm:"55px",md:"60px",lg:"50px"},
           borderRadius: "60px",
           display: "flex",
           justifyContent: "center",
@@ -21,28 +21,33 @@ const SearchBarForImmigration = ({ buttonName, placeHolderName }) => {
         <input
           type="text"
           placeholder={placeHolderName}
-          style={{
-            width:"390px" ,
-            height:{xs:"30px",sm:"40px",md:"40px",lg:"40px"},
-            padding: "5px",
-            outline: "none",
-            border: "none",
-            borderRadius:"30px",
-            marginLeft:"5px",
-          }}
+          // style={{
+          //   width:"100%",
+          //   padding: "5px",
+          //   outline: "none",
+          //   border: "none",
+           
+          //   marginLeft:"10px",
+          //   marginRight:"10px",
+          // }}
+          className="searchInputSection active"
         />{" "}
         <Button
           variant="contained"
-          sx={{
-            marginLeft: {xs:"0px",lg:"20px"},
-            marginRight:{xs:"5px"},
-            width: {md:"120px",lg:"120px"},
-            height:{xs:"30px",sm:"40px",md:"40px",lg:"40px"},
-            borderRadius: "40px",
-            backgroundColor: "black",
-            color: "white",
-            textTransform: "inherit",
-          }}
+          // sx={{
+          //   marginLeft: {xs:"0px",lg:"20px"},
+          //   marginRight:{xs:"5px"},
+          //   width:"120px",
+          //   height:{xs:"20px",sm:"40px",md:"40px",lg:"40px"},
+          //   borderRadius: "40px",
+          //   backgroundColor: "black",
+          //   color: "white",
+          //   textTransform: "inherit",
+          //   background:"red",
+          //   marginRight:"10px",
+          //   fontSize:{xs:"10px"}
+          // }}
+          className="searchBarButton"
         >
           {buttonName}
         </Button>

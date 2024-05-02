@@ -10,7 +10,7 @@ const OurReviewsSection = () => {
         sx={{
           textAlign: "center",
           position: "relative",
-          height: "200px",
+          height: { lg: "200px" },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -19,34 +19,40 @@ const OurReviewsSection = () => {
         <Typography
           sx={{
             position: "absolute",
-            top: "50%",
+            top: { xs: "5%", sm: "15%", md: "50%", lg: "50%" },
             color: "white",
-            fontSize:{ xs:"40px",lg:"80px"},
+            fontSize: { xs: "40px", lg: "80px" },
             fontFamily: "Alayna",
             fontWeight: "700",
-            borderBottom: "10px solid rgb(254, 201, 22);",
-            height: {xs:"55px",lg:"95px"},
+            borderBottom: {
+              xs: "2px solid rgb(254, 201, 22)",
+              sm: "10px solid rgb(254, 201, 22);",
+              md: "10px solid rgb(254, 201, 22);",
+              lg: "10px solid rgb(254, 201, 22)",
+            },
+            height: { xs: "48px", lg: "95px" },
           }}
         >
           Review & Testimonial
         </Typography>
       </Box>
-      <Box sx={{ marginTop: "110px" }}>
+      <Box sx={{ marginTop: {xs:"60px",lg:"110px"} }}>
         <SwiperOfReviewSection />
       </Box>
       <Box
         sx={{
-          height: "335px",
+          height: {xs:"90px", lg: "335px" },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
+         marginTop:"5px"
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Box>
             <Typography
-              sx={{ fontSize: "30px", color: "white", fontWeight: "700" }}
+              sx={{ fontSize: {xs:"12px",lg:"30px"}, color: "white", fontWeight: "700" }}
             >
               Rating:
             </Typography>

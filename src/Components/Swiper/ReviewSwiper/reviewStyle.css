@@ -1,26 +1,35 @@
 .myReviewSwiperr {
-    width: 100px;
-    height: 100%;
-    border: 2px solid black;
-  }
-  
+  width: 100px;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.mySwiperSlideOfReview {
+  max-width: 300px;
+  height: 370px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 425px) {
+  /* Target screens up to and including md */
   .mySwiperSlideOfReview {
-    max-width: 300px;
-    height: 370px;
+    max-width:70px;
+    height:80px;
     text-align: center;
-    font-size: 18px;
+    font-size: 10px;
     background: #fff;
-    border-radius: 20px;
-  
+    border-radius:5px;
+
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  @media screen and (max-width:600px) { /* Target screens up to and including md */
-    .mySwiperSlideOfReview{
-      width: 100px; 
-      background-color: black;
-    }
-  }
-  
+}
