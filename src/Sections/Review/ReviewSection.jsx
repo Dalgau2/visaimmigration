@@ -19,12 +19,12 @@ const OurReviewsSection = () => {
           sx={{
             position: "absolute",
             color: "white",
-            fontSize: {xs:"50px",lg:"80px"},
+            fontSize: {xs:"50px",sm:"80px",lg:"80px"},
             fontFamily: "Alayna",
             fontWeight: "700",
-            borderBottom: {xs:"5px solid rgb(254, 201, 22)",lg:"10px solid rgb(254, 201, 22)"},
+            borderBottom: {xs:"5px solid rgb(254, 201, 22)",lg:"9px solid rgb(254, 201, 22)",sm:"8px solid rgb(254, 201, 22)"},
             // backgroundColor:"black",
-            height: {xs:"60px",lg:"95px"},
+            height: {xs:"60px",lg:"95px",sm:"95px"},
             top:70,
             borderRadius:"30px"
           }}
@@ -49,7 +49,7 @@ const OurReviewsSection = () => {
           <Box>
             <Typography
               sx={{
-                fontSize: { lg: "30px" },
+                fontSize: {xs:"28px", lg: "30px" },
                 color: "white",
                 fontWeight: "700",
               }}

@@ -40,7 +40,7 @@ const SwiperOfReviewSection = () => {
             spaceBetween:70,
           },
           640: {
-            slidesPerView: 0,
+            slidesPerView: 3,
             spaceBetween:10,
           },
           768: {
@@ -49,6 +49,10 @@ const SwiperOfReviewSection = () => {
           },
           1024: {
             slidesPerView:4,
+            spaceBetween:30,
+          },
+          2560: {
+            slidesPerView:8,
             spaceBetween:30,
           },
         }}

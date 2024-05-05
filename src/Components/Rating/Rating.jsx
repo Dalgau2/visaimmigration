@@ -5,7 +5,7 @@ const MyRating = ({size}) => {
   return (
     <Stack spacing={1}>
       <Rating
-        sx={{ fontSize:{xs:"15px",sm:"50px",lg:`${size}px`} }}
+        sx={{ fontSize:{xs:"35px",sm:"50px",lg:`${size}px`} }}
         name="half-rating-read"
         defaultValue={5}
         precision={0.5}

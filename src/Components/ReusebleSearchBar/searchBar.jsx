@@ -7,8 +7,8 @@ const SearchBarForImmigration = ({ buttonName, placeHolderName }) => {
         component={Paper}
         elevation={4}
         sx={{
-          width: {xs:"230px",sm:"550px",md:"550px",lg:"545px"},
-          height:{xs:"25px",sm:"55px",md:"60px",lg:"50px"},
+          width: {xs:"270px",sm:"550px",md:"550px",lg:"545px"},
+          height:{xs:"35px",sm:"55px",md:"60px",lg:"50px"},
           borderRadius: "60px",
           display: "flex",
           justifyContent: "center",
