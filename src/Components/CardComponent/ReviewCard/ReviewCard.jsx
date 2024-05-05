@@ -14,28 +14,31 @@ const ReviewCardOfImmigration=()=>{
         sx={{
           maxWidth:"100%",
           height:"100%",
-          borderRadius: {xs:"5px",lg:"16px"},
+          borderRadius:"16px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          backgroundColor:"black"
+          // backgroundColor:"black"
+         
         }}
       >
-        <Box p={1} m={2}>
+        <Box p={1} m={5}>
           <Box
             sx={{
               display: "flex",
+              width:"100%",
               justifyContent: "center",
             }}
           >
             <Box>
               <BiSolidQuoteAltRight
-                style={{ fontSize: {xs:"10px",lg:"40px"}, color: "#FDD300" }}
+                style={{ fontSize: "40px", color: "#FDD300" }}
               />
             </Box>
             <CardContent
               sx={{
-                // display: "flex",
+                width:"130px",
+                display: "flex",
                 height: "150px",
                 alignItems: "center",
               }}
@@ -44,12 +47,11 @@ const ReviewCardOfImmigration=()=>{
                 sx={{
                   fontFamily: "juana",
                   fontWeight: "400",
-                  // fontSize:{xs:"10px",lg:"22px"},
-                  fontSize:"3px",
+                  fontSize:"22px",
                   color: "black",
                   textAlign: "center",
-                  color:"white",
-                  backgroundColor:"white"
+                  color:"black",
+                 
                 }}
               >
                 This impressive

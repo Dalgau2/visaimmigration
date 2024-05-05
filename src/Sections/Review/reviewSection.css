@@ -1,6 +1,5 @@
 .ourReviews {
   max-width: 100%;
-  height: 150vh;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.804) 0%,
@@ -12,12 +11,12 @@
       background-size: cover;
       background-repeat: no-repeat;
 }
-@media screen and (max-width:425px) { /* Target screens up to and including md */
-  .ourReviews{
+/* @media screen and (max-width:425px) { Target screens up to and including md */
+  /* .ourReviews{
     width: 100%;
     height: 100vh;
-    background-size:contain;
+    background-size:Cover;
     background-repeat: no-repeat;
     
   }
-}
+} */

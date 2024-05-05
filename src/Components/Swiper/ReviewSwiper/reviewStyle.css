@@ -1,7 +1,9 @@
-.myReviewSwiperr {
-  width: 100px;
-  height: 100%;
-  border: 2px solid black;
+.myReviewSwiper {
+  /* width: 100px; */
+  /* height:200px; */
+  margin-top: 300px;
+ 
+  border: 2px solid rgb(12, 12, 12);
 }
 
 .mySwiperSlideOfReview {
@@ -9,7 +11,6 @@
   height: 370px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
   border-radius: 20px;
 
   /* Center slide text vertically */
@@ -17,19 +18,28 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   /* Target screens up to and including md */
-  .mySwiperSlideOfReview {
+  /* .mySwiperSlideOfReview {
     max-width:70px;
     height:80px;
     text-align: center;
     font-size: 10px;
     background: #fff;
-    border-radius:5px;
+    border-radius:5px; */
 
     /* Center slide text vertically */
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; */
+  /* } */
+/* } */ 
+@media screen and (max-width: 425px) {
+  .myReviewSwiper {
+    width: 300px;
+  border-radius: 20px;
+    /* height:200px; */
+    margin-top: 150px;
+   /* padding-left: 8px; */
+    border: 2px solid rgb(12, 12, 12);}
 }

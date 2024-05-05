@@ -24,23 +24,23 @@ const SwiperOfReviewSection = () => {
     <Box>
       <Swiper
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         spaceBetween={30}
         modules={[Pagination, Autoplay]}
         loop={true}
         // breakpoints
-
+        
         breakpoints={{
           320:{
             slidesPerView: 1,
-            spaceBetween:10,
+            spaceBetween:70,
           },
           640: {
-            slidesPerView: 2,
+            slidesPerView: 0,
             spaceBetween:10,
           },
           768: {
@@ -48,7 +48,7 @@ const SwiperOfReviewSection = () => {
             spaceBetween:20,
           },
           1024: {
-            slidesPerView:1,
+            slidesPerView:4,
             spaceBetween:30,
           },
         }}
@@ -57,7 +57,7 @@ const SwiperOfReviewSection = () => {
         {data.map((d) => {
           return (
             <>
-              <SwiperSlide className="mySwiperSlideOfReview">
+              <SwiperSlide className="mySwiperSlideOfReview" >
                 <ReviewCardOfImmigration/>
               </SwiperSlide>
             </>

@@ -10,7 +10,6 @@ const OurReviewsSection = () => {
         sx={{
           textAlign: "center",
           position: "relative",
-          height: { lg: "200px" },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -19,40 +18,41 @@ const OurReviewsSection = () => {
         <Typography
           sx={{
             position: "absolute",
-            top: { xs: "5%", sm: "15%", md: "50%", lg: "50%" },
             color: "white",
-            fontSize: { xs: "40px", lg: "80px" },
+            fontSize: {xs:"50px",lg:"80px"},
             fontFamily: "Alayna",
             fontWeight: "700",
-            borderBottom: {
-              xs: "2px solid rgb(254, 201, 22)",
-              sm: "10px solid rgb(254, 201, 22);",
-              md: "10px solid rgb(254, 201, 22);",
-              lg: "10px solid rgb(254, 201, 22)",
-            },
-            height: { xs: "48px", lg: "95px" },
+            borderBottom: {xs:"5px solid rgb(254, 201, 22)",lg:"10px solid rgb(254, 201, 22)"},
+            // backgroundColor:"black",
+            height: {xs:"60px",lg:"95px"},
+            top:70,
+            borderRadius:"30px"
           }}
         >
           Review & Testimonial
         </Typography>
       </Box>
-      <Box sx={{ marginTop: {xs:"60px",lg:"110px"} }}>
+      <Box sx={{ marginTop:"110px"}}>
         <SwiperOfReviewSection />
       </Box>
       <Box
         sx={{
-          height: {xs:"90px", lg: "335px" },
+          height: { lg: "335px" },
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-         marginTop:"5px"
+          marginTop: "5px",
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Box>
             <Typography
-              sx={{ fontSize: {xs:"12px",lg:"30px"}, color: "white", fontWeight: "700" }}
+              sx={{
+                fontSize: { lg: "30px" },
+                color: "white",
+                fontWeight: "700",
+              }}
             >
               Rating:
             </Typography>

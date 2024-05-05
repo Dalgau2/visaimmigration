@@ -48,9 +48,6 @@ const HomePageForImmigration = () => {
       <Box><OurSuccessSection /></Box>
       {/* ReviewSection */}
       <Box><OurReviewsSection /></Box>
-      {/* <Box>
-        <FooterOfImmigration />
-      </Box> */}
     </Box>
   );
 };
