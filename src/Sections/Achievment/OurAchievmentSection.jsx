@@ -3,9 +3,9 @@ import "../Achievment/achivementSection.css";
 import AchivementCardList from "./AchivementCartList";
 const OurAchievements = () => {
   return (
-    <Box className="AchivementContainer" sx={{ width: "100%" }}>
+    <Box className="AchivementContainer" >
       <Box
-        // className="Achivementsection"
+        className="Achivementsection"
         sx={{ width: "100%" }}
       >
         <Box
@@ -40,7 +40,7 @@ const OurAchievements = () => {
           </Box>
         </Box>
         <Box className="AchivementSection">
-          <Box sx={{ width: "100%", height: "100%" }}>
+          <Box>
             <AchivementCardList />
           </Box>
         </Box>

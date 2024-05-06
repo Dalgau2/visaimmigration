@@ -11,22 +11,29 @@ const FooterOfImmigration = () => {
   return (
     <Box>
       <Box>
-        <PartnerBrand />
+        {/* <PartnerBrand /> */}
       </Box>
       <Box
         className="footerSection"
         sx={{
-          height: "390px",
+          height: {md:"390px",lg:"390px"},
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          // padding:"100px",
+            //=================>Main section 1 Of footer thhat is outter section
         }}
       >
         <Box
           sx={{
-            display: "flex",
+            display: {xs:"flex",sm:"flex",md:"flex",lg:"flex"},
             justifyContent: "center",
-            alignItems: "center",
+            flexDirection:{xs:"column",lg:"row",md:"row",sm:"row"},
+            alignItems: {lg:"center"},
+           
+            className:"mainConatainerOfLinks",
+            // width:{sm:"100%"}
+            //===================>centerSection of Footer inner Div
           }}
         >
           {/* logo and link section of footer */}
@@ -34,14 +41,14 @@ const FooterOfImmigration = () => {
             sx={{
               display: "flex",
               justifyContent: "space-evenly",
-
               flexDirection: "column",
-              height: "300px",
+              height: {xs:"150px",lg:"300px"},
               color: "white",
+              
             }}
           >
-            <Box sx={{ display: "flex", width: "290px" }}>
-              <Box sx={{ display: { xs: "none", md: "flex" }, mr: 2 }}>
+            <Box sx={{ display: "flex", width: {sm:"100px",lg:"260px"}}}>
+              <Box sx={{ display: { xs: "flex", md: "flex" }, mr: 2 }}>
                 <img src={logo} alt="logo" />
               </Box>
               <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -52,10 +59,11 @@ const FooterOfImmigration = () => {
                   href="#app-bar-with-responsive-menu"
                   sx={{
                     mr: 2,
-                    //   display: { xs: "none", md: "flex" },
+                      // display: { xs: "none", md: "flex" },
                     fontWeight: 700,
                     color: "inherit",
                     textDecoration: "none",
+                   fontSize:{sm:"18px"}
                   }}
                 >
                   Immigration
@@ -136,12 +144,12 @@ const FooterOfImmigration = () => {
       </Box>
       <Box
         sx={{
-          display: "flex",
+          display:{xs:"block",sm:"flex",md:"flex"},
           justifyContent: "space-around",
-          backgroundColor: "black",
           color: "white",
           alignItems: "center",
-          height: "50px",
+          minHeight: "50px",
+          backgroundColor: "black",
         }}
       >
         <Typography>
@@ -150,10 +158,12 @@ const FooterOfImmigration = () => {
         </Typography>
         <Box
           sx={{
-            display: "flex",
+            display:{xs:"block",lg:"flex",sm:"flex",md:"flex"},
             alignItems: "center",
             width: "670px",
             justifyContent: "space-between",
+            fontSize:{sm:"11px",md:"16px"},
+            backgroundColor: {xs:"black",lg:"black",md:"black"},
           }}
         >
           {" "}
@@ -164,6 +174,7 @@ const FooterOfImmigration = () => {
               color: "#FDD300",
               borderBottom: "2px solid #FDD300",
               height: "22px",
+            
             }}
           >
             GA Impire plt
@@ -172,8 +183,8 @@ const FooterOfImmigration = () => {
           <Typography>Privacy Policy</Typography>
           <Typography>Terms of use</Typography>
         </Box>
-      </Box>
+      </Box> 
     </Box>
   );
 };
-export default FooterOfImmigration;
+export default FooterOfImmigration; 

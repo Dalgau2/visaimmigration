@@ -1,21 +1,75 @@
-.SuccessHeading{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    line-height: 1.5rem;
-    flex-direction: column;
-    overflow:hidden;
-    justify-content: center;
+.SuccessHeading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  line-height: 1.5rem;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
 }
-.successImage{
-    width:60%;
-    height: 100vh;
+.successImage {
+  width: 60%;
+  height: 100vh;
+  background: url(/src/assets/Images/landing.webp);
+  background-repeat: no-repeat;
+  background-size:650px;
+}
+.OurSuccessContainer {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+  /* background: yellow; */
+  
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .OurSuccessContainer {
+    margin-top: 140px;
+    padding: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .successImage {
+    width: 220px;
     background: url(/src/assets/Images/landing.webp);
     background-repeat: no-repeat;
     background-size: cover;
-}
-@media screen and (max-width: 1200px) { /* Target screens up to and including md */
-    .successImage {
-      width: 100%; /* Set width to 100% for smaller screens */
-    }
+    height: 250px;
+    background-position: center;
+    background-position-x:-1px;
   }
+ 
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .successImage {
+    width: 100%;
+    background: url(/src/assets/Images/landing.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    background-position: center;
+   
+  }
+  .SuccessHeading {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width:1200px) {
+  .successImage {
+    width: 100%;
+    background: url(/src/assets/Images/landing.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 700px;
+    background-position:center;
+  }
+}
+@media (min-width:1200px) and (max-width:1450) {
+  .successImage{
+    width: 60%;
+    height: 100vh;
+    background: url(/src/assets/Images/landing.webp);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+  }
+}
