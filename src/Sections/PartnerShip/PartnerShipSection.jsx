@@ -7,23 +7,25 @@ const PartnerBrand = () => {
   return (
     <Box
       sx={{
-        minHeight: "200px",
-        display: "flex",
+        // minHeight: "200px",
+        display:{xs:"block",sm:"block",md:"flex",lg:"flex"},
         alignItems: "center",
         backgroundColor: "black",
         justifyContent: "center",
+        
       }}
     >
       <Box
         border={1}
         sx={{
-          width: "210px",
+          width: {sm:"100%",lg:"210px"},
           height: "160px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           borderRight: "1px solid grey",
           marginRight: "10px",
+          textAlign:{xs:"center"}
           
         }}
         className="PartnerBrans"
@@ -41,15 +43,15 @@ const PartnerBrand = () => {
       </Box>
       <Box
         sx={{
-          display: "flex",
+          display:{xs:"inline",lg:"flex",sm:"flex"},
           height: "100px",
           alignItems: "center",
           gap: "40px",
-         
+         width:{sm:"100%"}
         }}
       >
         <Box>
-          <img src={startup} alt="" />
+          <img style={{width:{sm:"100%"},height:"100%",objectFit:"cover"}} src={startup} alt="" />
         </Box>
         <Box>
           <img src={itat} alt="Logo" />

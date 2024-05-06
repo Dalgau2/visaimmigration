@@ -11,7 +11,7 @@ const FooterOfImmigration = () => {
   return (
     <Box>
       <Box>
-        {/* <PartnerBrand /> */}
+        <PartnerBrand />
       </Box>
       <Box
         className="footerSection"
