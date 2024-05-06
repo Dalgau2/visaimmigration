@@ -158,7 +158,7 @@ const FooterOfImmigration = () => {
         </Typography>
         <Box
           sx={{
-            display:{xs:"block",lg:"flex",sm:"flex",md:"flex"},
+            display:{xs:"inline",lg:"flex",sm:"flex",md:"flex"},
             alignItems: "center",
             width: "670px",
             justifyContent: "space-between",
