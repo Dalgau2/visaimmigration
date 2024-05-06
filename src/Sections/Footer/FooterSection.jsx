@@ -150,6 +150,7 @@ const FooterOfImmigration = () => {
           alignItems: "center",
           minHeight: "50px",
           backgroundColor: "black",
+          textAlign:{xs:"center",md:"start",lg:"start"}
         }}
       >
         <Typography>
@@ -164,6 +165,7 @@ const FooterOfImmigration = () => {
             justifyContent: "space-between",
             fontSize:{sm:"11px",md:"16px"},
             backgroundColor: {xs:"black",lg:"black",md:"black"},
+            textAlign:{xs:"center",sm:"start",md:"start",lg:"start"}
           }}
         >
           {" "}
@@ -172,7 +174,7 @@ const FooterOfImmigration = () => {
             ml={0.5}
             sx={{
               color: "#FDD300",
-              borderBottom: "2px solid #FDD300",
+              borderBottom:{ lg:"2px solid #FDD300"},
               height: "22px",
             
             }}
