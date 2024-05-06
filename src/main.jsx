@@ -14,6 +14,7 @@ import OurSuccessSection from "./Sections/Success/SuccessSection.jsx";
 import OurReviewsSection from "./Sections/Review/ReviewSection.jsx";
 import ReviewCardOfImmigration from "./Components/CardComponent/ReviewCard/ReviewCard.jsx";
 import OurAchievements from "./Sections/Achievment/OurAchievmentSection.jsx";
+import PackagePageOfImmigration from "./Pages/Package/Packages.jsx";
 export const theme = createTheme({
   palette: {
     primary: {

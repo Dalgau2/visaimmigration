@@ -21,7 +21,7 @@ const PackagePageOfImmigration = () => {
               component={Paper}
               sx={{
                 width: "100%",
-                height: "400px",
+                height: {xs:"170px",sm:"250px",lg:"400px"},
                 borderRadius: "20px",
               }}
             >
@@ -133,7 +133,7 @@ const PackagePageOfImmigration = () => {
             >
               <Typography
                 sx={{
-                  width: "300px",
+                  width: {xs:"147px",lg:"300px"},
                   marginBottom: "10px",
                   color: "white",
                   fontWeight: "500",
@@ -145,7 +145,7 @@ const PackagePageOfImmigration = () => {
               </Typography>
               <Typography
                 variant="h6"
-                sx={{ width: "300px", display: "flex", color: "#F9C018" }}
+                sx={{ width: {xs:"150px",lg:"300px"}, display: "flex", color: "#F9C018" }}
               >
                 <Box sx={{ marginTop: "3px" }}>
                   <CalendarMonthOutlinedIcon sx={{ color: "#F9C018" }} />
@@ -169,7 +169,7 @@ const PackagePageOfImmigration = () => {
               <Typography
                 sx={{
                   color: "white",
-                  width: "300px",
+                  width:  {xs:"150px",lg:"300px"},
                   fontWeight: "500",
                   fontSize: "22px",
                   marginBottom: "5px",
@@ -180,7 +180,7 @@ const PackagePageOfImmigration = () => {
               <Typography
                 sx={{
                   color: "white",
-                  width: "300px",
+                  width: {xs:"150px",lg:"300px"},
                   display: "flex",
                   color: "#F9C018",
                   alignItems: "center",
