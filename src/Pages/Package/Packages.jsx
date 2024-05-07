@@ -20,8 +20,8 @@ const PackagePageOfImmigration = () => {
             <Box
               component={Paper}
               sx={{
-                width: "100%",
-                height: {xs:"170px",sm:"250px",lg:"400px"},
+                width:"100%",
+                height: {xs:"170px",sm:"260px",lg:"400px"},
                 borderRadius: "20px",
               }}
             >
@@ -261,10 +261,10 @@ const PackagePageOfImmigration = () => {
         </Box>
         <Box>
           {/* Cart For the application */}
-          <Box className="startApplicationCard">
+          <Box className="startApplicationCard" mt={{xs:1}}>
             <Box
               sx={{
-                height: "115px",
+                height:{xs:"60px" ,lg:"115px"},
                 borderTopRightRadius: "inherit",
                 borderTopLeftRadius: "inherit",
                 backgroundColor: "#F9C018",
@@ -273,11 +273,11 @@ const PackagePageOfImmigration = () => {
                 alignItems: "center",
               }}
             >
-              <Typography>hello</Typography>
+              <Typography variant="h6" sx={{fontWeight:"700"}}>Start Application</Typography>
             </Box>
             <Box
               sx={{
-                height: "251px",
+                height: {xs:"180px",lg:"251px"},
                 backdropFilter: "blur(25px) saturate(180%)",
                 backgroundColor: "rgba(255, 255, 255, 0.37)",
               }}
@@ -287,14 +287,14 @@ const PackagePageOfImmigration = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  height: "70px",
+                  height:{xs:"50px", lg:"70px"},
                 }}
               >
                 <Box
                   sx={{
                     width: "250px",
                     textAlign: "center",
-                    height: "40px",
+                    height:"40px",
                     lineHeight: "40px",
                     borderRadius: "10px",
                     color: "white",
@@ -312,7 +312,7 @@ const PackagePageOfImmigration = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  height: "170px",
+                  height:{xs:"120px",lg:"170px"}
                 }}
               >
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -321,7 +321,7 @@ const PackagePageOfImmigration = () => {
                 </Box>
                 <hr />
                 <Box>
-                  <Typography variant="h4" sx={{ fontWeight: "700" }} mt={1}>
+                  <Typography variant={"h4"} sx={{fontSize:{xs:"25px"}, fontWeight: "700" }} mt={1}>
                     Price
                   </Typography>
                 </Box>
@@ -340,7 +340,7 @@ const PackagePageOfImmigration = () => {
             </Box>
             <Box
               sx={{
-                height: "90px",
+                height: {xs:"60px",lg:"90px"},
                 borderBottomLeftRadius: "inherit",
                 borderBottomRightRadius: "inherit",
                 backgroundColor: "#F9C018",

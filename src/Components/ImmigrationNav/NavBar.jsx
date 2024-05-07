@@ -107,7 +107,21 @@ function NavigationBar() {
                 {/* xs=flex md=none side bar */}
                 {data.map((nav) => (
                   <MenuItem key={nav.id} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{nav.navlink}</Typography>
+                     <Link
+                    to={`${nav.href}`}
+                    key={nav.id}
+                    onClick={handleCloseNavMenu}
+                    style={{
+                      my: 2,
+                      color: "black",
+                      display: "block",
+                      textDecoration: "none",
+                      zIndex: 999,
+                    }}
+                    className="navBarLink"
+                  >
+                    {nav.navlink}
+                  </Link>
                   </MenuItem>
                 ))}
               </Menu>
