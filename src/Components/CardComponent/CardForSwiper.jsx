@@ -1,7 +1,9 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import cn from "../../assets/Images/md.webp";
-const SwiperCardForImmigration = ({ data }) => {
+import { useEffect } from "react";
+const SwiperCardForImmigration = ({data}) => {
+ 
   return (
     <Box
       sx={{
@@ -49,7 +51,7 @@ const SwiperCardForImmigration = ({ data }) => {
           </Box>
         </Box>
       </Card>{" "}
-      <Box>{data}</Box>
+      {/* <Box>{data}</Box> */}
     </Box>
   );
 };

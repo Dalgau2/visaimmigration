@@ -2,8 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "./swiperImmigration.css";
 import { Box, Card, CardMedia, CardContent, Typography } from "@mui/material";
-import data from "../DataOfImmigration/dataSet.json";
-import imge from "../../assets/Images/homebackground.246fe7ba.png";
+import { useSelector } from "react-redux";
 import {
   EffectCoverflow,
   Pagination,
@@ -12,7 +11,13 @@ import {
 } from "swiper/modules";
 import { delay } from "framer-motion";
 import SwiperCardForImmigration from "../CardComponent/CardForSwiper";
+import { useEffect } from "react";
 const SwiperImmigration = () => {
+  const getData = useSelector((state) => state.data.data);
+  useEffect(() => {
+    console.log("swiperDta");
+  }, []);
+  console.log("swipppp")
   return (
     <Box
       className="main-Swiper_Conatiner"
@@ -20,10 +25,10 @@ const SwiperImmigration = () => {
     >
       <Swiper
         effect={"coverflow"}
-         autoplay={{
-           delay: 1000,
-           disableOnInteraction: false,
-         }}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
@@ -39,15 +44,18 @@ const SwiperImmigration = () => {
         loop={true}
         className="mySwiperForImmigration"
       >
-        {data.map((d) => {
-          return (
-            <>
-              <SwiperSlide className="mySwiperslideForImmigration">
-                <SwiperCardForImmigration />
+        {getData && getData.length >= 0 ? (
+          getData.map((data, index) => {
+            return (
+              <SwiperSlide key={index} className="mySwiperslideForImmigration">
+                {/* <SwiperCardForImmigration data={data} /> */}
+                <Typography>{data.image}</Typography>
               </SwiperSlide>
-            </>
-          );
-        })}
+            );
+          })
+        ) : (
+          <h1>loading....</h1>
+        )}
       </Swiper>
     </Box>
   );
