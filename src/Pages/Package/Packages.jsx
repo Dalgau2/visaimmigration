@@ -8,7 +8,18 @@ import PortraitOutlinedIcon from "@mui/icons-material/PortraitOutlined";
 import "../Package/styleOfPackage.css";
 import pic from "../../assets/Images/packageback.a9ad0eb3 (1).jpeg";
 import ImmigrationBreadCrumb from "../../Components/BreadCrumb/ImmigrationBreadCrumb";
+import { useParams } from "react-router";
+import { useSelector } from "react-redux";
+
 const PackagePageOfImmigration = () => {
+  // Getting Value (DynamicId) by using  UsePrams
+  const { id } = useParams();
+const data=useSelector((state)=>{
+  const vista=state.data.data
+  const filterData=vista.find((d)=>d.id===id)
+  return filterData
+})
+const{title,country,price_per_person,visa_additional_details,visa_delivery_in_days,validity_period_in_days,image}=data
   return (
     <Box className="PackageSection">
       <Box className="breadCrumpOfPackage">
@@ -20,14 +31,14 @@ const PackagePageOfImmigration = () => {
             <Box
               component={Paper}
               sx={{
-                width:"100%",
-                height: {xs:"170px",sm:"260px",lg:"400px"},
+                width: "100%",
+                height: { xs: "170px", sm: "260px", lg: "400px" },
                 borderRadius: "20px",
               }}
             >
               <img
-                src={pic}
-                alt=""
+                src={image}
+                alt={country}
                 style={{
                   width: "100%",
                   height: "100%",
@@ -60,7 +71,7 @@ const PackagePageOfImmigration = () => {
                 color: "black",
               }}
             >
-              Australiya
+              {country}
               <Box>
                 <Typography sx={{ display: "flex" }}>
                   <Box>
@@ -107,7 +118,7 @@ const PackagePageOfImmigration = () => {
                 >
                   <WatchLaterOutlinedIcon />{" "}
                 </Box>
-                16 May 2024 at 16:19 PM
+              {visa_delivery_in_days}
               </Typography>
             </Box>
           </Box>
@@ -133,7 +144,7 @@ const PackagePageOfImmigration = () => {
             >
               <Typography
                 sx={{
-                  width: {xs:"147px",lg:"300px"},
+                  width: { xs: "147px", lg: "300px" },
                   marginBottom: "10px",
                   color: "white",
                   fontWeight: "500",
@@ -145,12 +156,16 @@ const PackagePageOfImmigration = () => {
               </Typography>
               <Typography
                 variant="h6"
-                sx={{ width: {xs:"150px",lg:"300px"}, display: "flex", color: "#F9C018" }}
+                sx={{
+                  width: { xs: "150px", lg: "300px" },
+                  display: "flex",
+                  color: "#F9C018",
+                }}
               >
                 <Box sx={{ marginTop: "3px" }}>
                   <CalendarMonthOutlinedIcon sx={{ color: "#F9C018" }} />
                 </Box>
-                30
+               {validity_period_in_days}
               </Typography>
             </Box>
             <Box
@@ -169,7 +184,7 @@ const PackagePageOfImmigration = () => {
               <Typography
                 sx={{
                   color: "white",
-                  width:  {xs:"150px",lg:"300px"},
+                  width: { xs: "150px", lg: "300px" },
                   fontWeight: "500",
                   fontSize: "22px",
                   marginBottom: "5px",
@@ -180,7 +195,7 @@ const PackagePageOfImmigration = () => {
               <Typography
                 sx={{
                   color: "white",
-                  width: {xs:"150px",lg:"300px"},
+                  width: { xs: "150px", lg: "300px" },
                   display: "flex",
                   color: "#F9C018",
                   alignItems: "center",
@@ -190,7 +205,7 @@ const PackagePageOfImmigration = () => {
                 <Box>
                   <EmojiPeopleOutlinedIcon />
                 </Box>
-                Tourist Entry
+                {title}
               </Typography>
             </Box>
           </Box>
@@ -261,10 +276,10 @@ const PackagePageOfImmigration = () => {
         </Box>
         <Box>
           {/* Cart For the application */}
-          <Box className="startApplicationCard" mt={{xs:1}}>
+          <Box className="startApplicationCard" mt={{ xs: 1 }}>
             <Box
               sx={{
-                height:{xs:"60px" ,lg:"115px"},
+                height: { xs: "60px", lg: "115px" },
                 borderTopRightRadius: "inherit",
                 borderTopLeftRadius: "inherit",
                 backgroundColor: "#F9C018",
@@ -273,11 +288,13 @@ const PackagePageOfImmigration = () => {
                 alignItems: "center",
               }}
             >
-              <Typography variant="h6" sx={{fontWeight:"700"}}>Start Application</Typography>
+              <Typography variant="h6" sx={{ fontWeight: "700" }}>
+                Start Application
+              </Typography>
             </Box>
             <Box
               sx={{
-                height: {xs:"180px",lg:"251px"},
+                height: { xs: "180px", lg: "251px" },
                 backdropFilter: "blur(25px) saturate(180%)",
                 backgroundColor: "rgba(255, 255, 255, 0.37)",
               }}
@@ -287,14 +304,14 @@ const PackagePageOfImmigration = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  height:{xs:"50px", lg:"70px"},
+                  height: { xs: "50px", lg: "70px" },
                 }}
               >
                 <Box
                   sx={{
                     width: "250px",
                     textAlign: "center",
-                    height:"40px",
+                    height: "40px",
                     lineHeight: "40px",
                     borderRadius: "10px",
                     color: "white",
@@ -302,7 +319,7 @@ const PackagePageOfImmigration = () => {
                     fontWeight: "500",
                   }}
                 >
-                  25 May 2024 at 9:45 AM
+                  {visa_delivery_in_days}
                 </Box>
               </Box>
               <Box
@@ -312,7 +329,7 @@ const PackagePageOfImmigration = () => {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
-                  height:{xs:"120px",lg:"170px"}
+                  height: { xs: "120px", lg: "170px" },
                 }}
               >
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
@@ -321,26 +338,30 @@ const PackagePageOfImmigration = () => {
                 </Box>
                 <hr />
                 <Box>
-                  <Typography variant={"h4"} sx={{fontSize:{xs:"25px"}, fontWeight: "700" }} mt={1}>
+                  <Typography
+                    variant={"h4"}
+                    sx={{ fontSize: { xs: "25px" }, fontWeight: "700" }}
+                    mt={1}
+                  >
                     Price
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                   <Typography>Visa Fee</Typography>
-                  <Typography>INR 250000 X 1</Typography>
+                  <Typography>INR {price_per_person} X 1</Typography>
                 </Box>
                 <hr />
                 <Box sx={{ display: "flex", justifyContent: "space-between" }}>
                   <Typography variant="h6" sx={{ fontWeight: "500" }}>
                     Total Amount
                   </Typography>
-                  <Typography>INR 2500000000</Typography>
+                  <Typography>INR {price_per_person}</Typography>
                 </Box>
               </Box>
             </Box>
             <Box
               sx={{
-                height: {xs:"60px",lg:"90px"},
+                height: { xs: "60px", lg: "90px" },
                 borderBottomLeftRadius: "inherit",
                 borderBottomRightRadius: "inherit",
                 backgroundColor: "#F9C018",

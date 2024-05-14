@@ -1,9 +1,18 @@
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import cn from "../../assets/Images/md.webp";
 import { useEffect } from "react";
-const SwiperCardForImmigration = ({data}) => {
- 
+const SwiperCardForImmigration = () => {
+  useEffect(() => {
+    console.log("data");
+  }, []);
   return (
     <Box
       sx={{
@@ -14,12 +23,18 @@ const SwiperCardForImmigration = ({data}) => {
     >
       <Card
         sx={{
-          maxWidth:{xl:"400px",lg:"300px"},
+          maxWidth: { xl: "400px", lg: "300px" },
           padding: 1,
-          height:"310px",
+          height: "310px",
           borderRadius: "25px",
           backgroundColor: "white",
-          height:{xl:"400px",lg:"310px",sm:"310px",md:"310px",xs:"310px"}
+          height: {
+            xl: "400px",
+            lg: "310px",
+            sm: "310px",
+            md: "310px",
+            xs: "310px",
+          },
           // border: "2px solid black",
         }}
       >
@@ -35,9 +50,7 @@ const SwiperCardForImmigration = ({data}) => {
           }}
         />
         <Box sx={{ marginTop: "5px" }}>
-          <Typography variant="h5" sx={{ fontWeight: "700" }}>
-            hello
-          </Typography>
+          <Typography sx={{ fontWeight: "700" }}>Ramu</Typography>
           <Typography>
             Get on <span style={{ color: "red" }}>April /10/1999</span>
           </Typography>
@@ -45,13 +58,22 @@ const SwiperCardForImmigration = ({data}) => {
             <span>
               <FlightTakeoffIcon />
             </span>
-            <Typography sx={{ paddingRight: "1px" }}>
-              4 Direct Flight{" "}
+            <Typography variant="body1" sx={{ paddingRight: "1px" }}>
+              4 Direct Flight 
             </Typography>
           </Box>
         </Box>
+        <Box
+          mt={2}
+          sx={{
+            borderTop: "2px solid black",
+            padding: "0px",
+            marginRight: "0px",
+          }}
+        >
+          <Button variant="contained">Start</Button>
+        </Box>
       </Card>{" "}
-      {/* <Box>{data}</Box> */}
     </Box>
   );
 };

@@ -26,7 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LayoutOfImmigration />}>
               <Route index element={<HomePageForImmigration />} />
-              <Route path="/package" element={<PackagePageOfImmigration />} />
+              <Route path="/:id" element={<PackagePageOfImmigration />} />
             </Route>
           </Routes>
         </BrowserRouter>

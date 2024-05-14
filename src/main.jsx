@@ -17,6 +17,8 @@ import OurAchievements from "./Sections/Achievment/OurAchievmentSection.jsx";
 import PackagePageOfImmigration from "./Pages/Package/Packages.jsx";
 import { Provider } from "react-redux";
 import {store} from "./StoreForImmigration/store.jsx"
+import SwiperCardForImmigration from "./Components/CardComponent/CardForSwiper.jsx";
+import VisaCard from "./Components/CardComponent/ReviewCard/VisaCard.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -34,7 +36,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <App />
+        <App/>
       </Provider>
     </ThemeProvider>
   

@@ -1,0 +1,15 @@
+/* .ButtonForStart.active:hover{
+   background-color:black;
+   color:#F8AD0F;
+   font-weight: 600;
+   border-top: none;
+} */
+.VisaCard.active:hover{
+transform: scale(1.05);
+.ButtonForStart.active{
+    background-color:black;
+    color:#F8AD0F;
+    font-weight: 600;
+    border-top: none;
+}
+}

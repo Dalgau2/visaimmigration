@@ -14,10 +14,6 @@ import SwiperCardForImmigration from "../CardComponent/CardForSwiper";
 import { useEffect } from "react";
 const SwiperImmigration = () => {
   const getData = useSelector((state) => state.data.data);
-  useEffect(() => {
-    console.log("swiperDta");
-  }, []);
-  console.log("swipppp")
   return (
     <Box
       className="main-Swiper_Conatiner"
@@ -48,8 +44,7 @@ const SwiperImmigration = () => {
           getData.map((data, index) => {
             return (
               <SwiperSlide key={index} className="mySwiperslideForImmigration">
-                {/* <SwiperCardForImmigration data={data} /> */}
-                <Typography>{data.image}</Typography>
+                <SwiperCardForImmigration data={data} />
               </SwiperSlide>
             );
           })

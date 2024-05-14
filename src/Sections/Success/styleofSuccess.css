@@ -74,3 +74,13 @@
     background-position: center;
   }
 }
+@media (min-width:1450px) and (max-width:2720px) {
+  .successImage{
+    width: 60%;
+    height: 100vh;
+    background: url(/src/assets/Images/landing.webp);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+  }
+}

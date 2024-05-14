@@ -1,8 +1,12 @@
 import { Box, Typography, Button, Paper } from "@mui/material";
 import SwiperCardForImmigration from "../../Components/CardComponent/CardForSwiper";
-import data from "../../Components/DataOfImmigration/dataSet.json";
+import { useSelector } from "react-redux";
+// import data from "../../Components/DataOfImmigration/dataSet.json";
 import "./dsection.css";
+import { Key } from "@mui/icons-material";
+import VisaCard from "../../Components/CardComponent/ReviewCard/VisaCard";
 const ExploarDestination = () => {
+const visaData=useSelector((state)=>state.data.data)
   return (
     <Box className="DestinationContainer">
       {/* Expolation Section  Start */}
@@ -61,12 +65,12 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "18px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px", lg: "16px" },
                   padding: { xs: "5px", md: "7px" },
                   lineHeight: { xs: "15px" },
                 }}
               >
-                All
+                <Typography>All</Typography>
               </Button>
               <Button
                 variant="contained"
@@ -78,12 +82,12 @@ const ExploarDestination = () => {
                   color: "white",
                   textTransform: "inherit",
                   height: { xs: "29px", sm: "28px", md: "35px", lg: "35px" },
-                  fontSize: { xs: "12px", sm: "18px", md: "18px",lg: "18px" },
+                  fontSize: { xs: "12px", sm: "18px", md: "18px",lg: "16px" },
                   padding: { xs: "5px", md: "7px", sm: "9px" },
                   lineHeight: { xs: "15px" },
                 }}
               >
-                Instant
+               <Typography> Instant</Typography>
               </Button>
               <Button
                 variant="contained"
@@ -100,7 +104,7 @@ const ExploarDestination = () => {
                   lineHeight: { xs: "15px" },
                 }}
               >
-                In a Weak
+               <Typography> In a Weak</Typography>
               </Button>
               <Button
                 variant="contained"
@@ -118,7 +122,7 @@ const ExploarDestination = () => {
                   lineHeight: { xs: "15px" },
                 }}
               >
-                In a Month
+               <Typography> In a Month</Typography>
               </Button>
             </Box>
           </Box>
@@ -138,10 +142,10 @@ const ExploarDestination = () => {
           justifyItems: "center",
           gap: "10px",
           padding: "30px",
-          gridTemplateColumns: "repeat(5,1fr)",
+          gridTemplateColumns: "repeat(4,1fr)",
           gridTemplateColumns: {
             xl: "repeat(7,1fr)",
-            lg: "repeat(5,1fr)",
+            lg: "repeat(4,1fr)",
             md: "repeat(4,1fr)",
             sm: "repeat(2,1fr)",
             sx: "repeat(1,1fr)",
@@ -149,11 +153,11 @@ const ExploarDestination = () => {
           },
         }}
       >
-        {data.map((d) => {
+        {visaData.map((data,index) => {
           return (
-            <>
-              <SwiperCardForImmigration data={d.id} />
-            </>
+            <Box key={index}>
+              <VisaCard data={data} />
+            </Box>
           );
         })}
       </Box>
