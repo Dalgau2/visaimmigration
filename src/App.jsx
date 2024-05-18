@@ -6,6 +6,10 @@ import HomePageForImmigration from "./Pages/HomePage/Homepage";
 import PackagePageOfImmigration from "./Pages/Package/Packages";
 import { setData } from "./StoreForImmigration/store";
 import dataOfImmigration from "./Components/DataOfImmigration/immigration.json";
+import AllPackagePage from "./Pages/AllPackage/AllPackagePage";
+import OurServicesPage from "./Pages/Services/OurServices";
+import ContactPageOfImmigration from "./Pages/Contact/ContactPage";
+import AboutPage from "./Pages/About/AboutPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,7 +30,11 @@ function App() {
           <Routes>
             <Route path="/" element={<LayoutOfImmigration />}>
               <Route index element={<HomePageForImmigration />} />
-              <Route path="/:id" element={<PackagePageOfImmigration />} />
+              <Route path="/packages" element={<AllPackagePage/>}/>
+              <Route path="/packages/:id" element={<PackagePageOfImmigration />} />
+              <Route path="/services" element={<OurServicesPage/>} />
+              <Route path="/contact" element={<ContactPageOfImmigration/>}/>
+              <Route path="/about" element={<AboutPage/>}/>
             </Route>
           </Routes>
         </BrowserRouter>

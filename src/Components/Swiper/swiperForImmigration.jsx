@@ -12,6 +12,7 @@ import {
 import { delay } from "framer-motion";
 import SwiperCardForImmigration from "../CardComponent/CardForSwiper";
 import { useEffect } from "react";
+import VisaCard from "../CardComponent/ReviewCard/VisaCard";
 const SwiperImmigration = () => {
   const getData = useSelector((state) => state.data.data);
   return (
@@ -20,7 +21,7 @@ const SwiperImmigration = () => {
       sx={{ marginTop: "0px", width: "100%" }}
     >
       <Swiper
-        effect={"coverflow"}
+       
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
@@ -33,10 +34,10 @@ const SwiperImmigration = () => {
           stretch: 0,
           depth: 10,
           modifier: 1.5,
-          slideShadows: true,
+         
         }}
         //  pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[ Pagination, Autoplay]}
         loop={true}
         className="mySwiperForImmigration"
       >
@@ -44,7 +45,7 @@ const SwiperImmigration = () => {
           getData.map((data, index) => {
             return (
               <SwiperSlide key={index} className="mySwiperslideForImmigration">
-                <SwiperCardForImmigration data={data} />
+                <VisaCard data={data} />
               </SwiperSlide>
             );
           })

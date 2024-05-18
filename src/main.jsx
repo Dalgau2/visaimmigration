@@ -19,6 +19,9 @@ import { Provider } from "react-redux";
 import {store} from "./StoreForImmigration/store.jsx"
 import SwiperCardForImmigration from "./Components/CardComponent/CardForSwiper.jsx";
 import VisaCard from "./Components/CardComponent/ReviewCard/VisaCard.jsx";
+import AllPackagePage from "./Pages/AllPackage/AllPackagePage.jsx";
+import ReuseableBackground from "./ResuseableBackground.jsx";
+import AllCategoryButton from "./Button/AllCategoryButton.jsx";
 export const theme = createTheme({
   palette: {
     primary: {

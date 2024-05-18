@@ -17,7 +17,7 @@ const VisaCard = ({ data }) => {
 const navigate=useNavigate()
 
   const handelClick = (id) => {
-    navigate(`${id}`)
+    navigate(`/packages/${id}`)
   };
   return (
     <div className="VisaCard active">

@@ -17,14 +17,14 @@
   background-position: center;
   background-size: cover;
   max-width:250px;
-  height: 300px;
+  height: 400px;
   border-radius: 22px;
   margin-right: 8px;
   margin-left: 2px;
   /* border: 1px solid black; */
   display: flex;
   justify-content: center ;
-  background-color:white !important;
+  /* background-color:white !important; */
   z-index: 999 !important;
 }
 .swiper-slide.swiper-slide-active.mySwiperslideForImmigration.swiper-slide-visible.swiper-slide-fully-visible {
@@ -34,7 +34,7 @@
   margin-right: 40px;
   margin-left: 30px;
   max-width: 250px;
-  background: white;
+  /* background: white; */
 }
 @media (max-width:425px) {
   .mySwiperslideForImmigration {
@@ -49,7 +49,7 @@
     /* border: 1px solid black; */
     display: flex;
     justify-content: center ;
-    background-color:white !important;
+    /* background-color:white !important; */
     z-index: 999 !important;
   }
   .swiper-slide.swiper-slide-active.mySwiperslideForImmigration.swiper-slide-visible.swiper-slide-fully-visible {
@@ -59,7 +59,7 @@
     margin-right: 40px;
     margin-left: 30px;
     max-width: 250px;
-    background: white;
+    /* background: white; */
   }
   .mySwiperForImmigration{
     padding-top: 70px;

@@ -2,17 +2,17 @@
   {
     "id": "1",
     "navlink": "Package",
-    "href":"#"
+    "href":"/packages"
   },
   {
     "id": "2",
-    "navlink": "Popular package",
-    "href": "/popularpackage"
+    "navlink": "Services",
+    "href": "/services"
   },
   {
     "id": "3",
-    "navlink": "Services",
-    "href": "/services"
+    "navlink": "Contact",
+    "href": "/contact"
   },
   {
     "id": "4",
