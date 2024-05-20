@@ -58,10 +58,10 @@ const SwiperOfReviewSection = () => {
         }}
         className="myReviewSwiper"
       >
-        {data.map((d) => {
+        {data.map((d,index) => {
           return (
             <>
-              <SwiperSlide className="mySwiperSlideOfReview" >
+              <SwiperSlide key={index} className="mySwiperSlideOfReview" >
                 <ReviewCardOfImmigration/>
               </SwiperSlide>
             </>

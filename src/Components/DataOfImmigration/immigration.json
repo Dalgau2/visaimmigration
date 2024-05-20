@@ -9,7 +9,8 @@
     "documents_required": ["Passport", "AdharCard", "Photo"],
     "price_per_person": "30000",
     "visa_additional_details": "Single Entry",
-    "country": "Canada"
+    "country": "Canada",
+    "visa_in_days":"60"
   },
   {
     "id": "7fd5e8b166953d4a19a09bc7",
@@ -21,7 +22,8 @@
     "documents_required": ["Passport", "Photo"],
     "price_per_person": "25000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Australia"
+    "country": "Australia",
+    "visa_in_days":"90"
   },
   {
     "id": "9876a890b1c2d3e4f5g678h9",
@@ -33,7 +35,8 @@
     "documents_required": ["Passport", "Photo", "Bank Statement"],
     "price_per_person": "15000",
     "visa_additional_details": "Single Entry",
-    "country": "France"
+    "country": "France",
+    "visa_in_days":"50"
   },
   {
     "id": "5432d1a1b2c3e4f5g6h7i89j",
@@ -45,7 +48,8 @@
     "documents_required": ["Passport", "Photo", "Educational Certificates"],
     "price_per_person": "20000",
     "visa_additional_details": "Multiple Entry",
-    "country": "United Kingdom"
+    "country": "United Kingdom",
+    "visa_in_days":"80"
   },
   {
     "id": "2468jklm9031nopqrstu",
@@ -57,7 +61,8 @@
     "documents_required": ["Passport", "Photo", "Business License"],
     "price_per_person": "28000",
     "visa_additional_details": "Single Entry",
-    "country": "Germany"
+    "country": "Germany",
+    "visa_in_days":"70"
   },
   {
     "id": "abcdefg0987654321zyxw",
@@ -74,7 +79,8 @@
     ],
     "price_per_person": "32000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Italy"
+    "country": "Italy",
+    "visa_in_days":"60"
   },
   {
     "id": "a1b2c3d4e5f6g7h8i9j0k",
@@ -86,7 +92,8 @@
     "documents_required": ["Passport", "Photo", "Travel Itinerary"],
     "price_per_person": "10000",
     "visa_additional_details": "Single Entry",
-    "country": "Netherlands"
+    "country": "Netherlands",
+    "visa_in_days":"0"
   },
   {
     "id": "1a2b3c4d5e6f7g8h9i0j",
@@ -98,7 +105,8 @@
     "documents_required": ["Passport", "Photo", "Proof of Retirement Income"],
     "price_per_person": "35000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Spain"
+    "country": "Spain",
+    "visa_in_days":"0"
   },
   {
     "id": "9a8b7c6d5e4f3g2h1i0j",
@@ -110,7 +118,8 @@
     "documents_required": ["Passport", "Photo", "Proof of Investment"],
     "price_per_person": "40000",
     "visa_additional_details": "Single Entry",
-    "country": "Singapore"
+    "country": "Singapore",
+    "visa_in_days":"0"
   },
   {
     "id": "1qaz2wsx3edc4rfv5tgb",
@@ -122,7 +131,8 @@
     "documents_required": ["Passport", "Photo", "Official Invitation Letter"],
     "price_per_person": "0",
     "visa_additional_details": "Multiple Entry",
-    "country": "United States"
+    "country": "United States",
+    "visa_in_days":"90"
   },
   {
     "id": "zxcvbnmasdfghjklqwerty",
@@ -134,7 +144,8 @@
     "documents_required": ["Passport", "Photo", "Travel Insurance"],
     "price_per_person": "20000",
     "visa_additional_details": "Single Entry",
-    "country": "Switzerland"
+    "country": "Switzerland",
+    "visa_in_days":"30"
   },
   {
     "id": "poiuytrewqasdfghjklmnb",
@@ -146,7 +157,8 @@
     "documents_required": ["Passport", "Photo", "Schengen Travel Insurance"],
     "price_per_person": "18000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Belgium"
+    "country": "Belgium",
+    "visa_in_days":"6"
   },
   {
     "id": "lkjhgfdswertyuiopxcvbnm",
@@ -158,7 +170,8 @@
     "documents_required": ["Passport", "Photo", "Police Clearance Certificate"],
     "price_per_person": "50000",
     "visa_additional_details": "Multiple Entry",
-    "country": "New Zealand"
+    "country": "New Zealand",
+    "visa_in_days":"30"
   },
   {
     "id": "mnbvcxzlkjhgfdsapoiuyt",
@@ -170,7 +183,8 @@
     "documents_required": ["Passport", "Photo", "Asylum Application"],
     "price_per_person": "0",
     "visa_additional_details": "Asylum Granted",
-    "country": "Sweden"
+    "country": "Sweden",
+    "visa_in_days":"6"
   },
   {
     "id": "qweasdzxcrfvtgbyhnmju",
@@ -182,7 +196,8 @@
     "documents_required": ["Passport", "Photo", "Portfolio"],
     "price_per_person": "28000",
     "visa_additional_details": "Single Entry",
-    "country": "Denmark"
+    "country": "Denmark",
+    "visa_in_days":"0"
   },
   {
     "id": "okmijnuhbgyvtfcdrxzesaq",
@@ -194,7 +209,8 @@
     "documents_required": ["Passport", "Photo", "Press Accreditation"],
     "price_per_person": "22000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Norway"
+    "country": "Norway",
+    "visa_in_days":"30"
   },
   {
     "id": "plmoknijbuhvygctfxrdzeswaq",
@@ -206,7 +222,8 @@
     "documents_required": ["Passport", "Photo", "Medical Records"],
     "price_per_person": "18000",
     "visa_additional_details": "Single Entry",
-    "country": "Finland"
+    "country": "Finland",
+    "visa_in_days":"40"
   },
   {
     "id": "vfrtgbnhytgvfrdcvbhytgvf",
@@ -222,7 +239,8 @@
     ],
     "price_per_person": "25000",
     "visa_additional_details": "Multiple Entry",
-    "country": "Ireland"
+    "country": "Ireland",
+    "visa_in_days":"60"
   },
   {
     "id": "ujmikolpzaqwsxedcrfvtgbyhnujm",
@@ -234,7 +252,8 @@
     "documents_required": ["Passport", "Photo", "Job Offer Letter"],
     "price_per_person": "30000",
     "visa_additional_details": "Single Entry",
-    "country": "Austria"
+    "country": "Austria",
+    "visa_in_days":"90"
   },
   {
     "id": "wsxrfvtgbyhnujmikolpqazxswcde",
@@ -246,6 +265,7 @@
     "documents_required": ["Passport", "Photo", "Volunteering Program Details"],
     "price_per_person": "0",
     "visa_additional_details": "Multiple Entry",
-    "country": "Portugal"
+    "country": "Portugal",
+    "visa_in_days":"0"
   }
 ]

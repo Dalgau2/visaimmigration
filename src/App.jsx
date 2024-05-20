@@ -10,6 +10,11 @@ import AllPackagePage from "./Pages/AllPackage/AllPackagePage";
 import OurServicesPage from "./Pages/Services/OurServices";
 import ContactPageOfImmigration from "./Pages/Contact/ContactPage";
 import AboutPage from "./Pages/About/AboutPage";
+import DashBoardLayout from "./Dashboard/layoutOfDashBoard/DashboardLayout";
+import DashboardPage from "./Dashboard/DashboardNavBar/DasboardPage";
+import ApplicationPage from "./Dashboard/DashboardNavBar/dashPages/ApplicationPage";
+import ApplyNew from "./Dashboard/DashboardNavBar/dashPages/apply";
+import SupportPage from "./Dashboard/DashboardNavBar/dashPages/SupportPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -30,11 +35,14 @@ function App() {
           <Routes>
             <Route path="/" element={<LayoutOfImmigration />}>
               <Route index element={<HomePageForImmigration />} />
-              <Route path="/packages" element={<AllPackagePage/>}/>
-              <Route path="/packages/:id" element={<PackagePageOfImmigration />} />
-              <Route path="/services" element={<OurServicesPage/>} />
-              <Route path="/contact" element={<ContactPageOfImmigration/>}/>
-              <Route path="/about" element={<AboutPage/>}/>
+              <Route path="/packages" element={<AllPackagePage />} />
+              <Route
+                path="/packages/:id"
+                element={<PackagePageOfImmigration />}
+              />
+              <Route path="/services" element={<OurServicesPage />} />
+              <Route path="/contact" element={<ContactPageOfImmigration />} />
+              <Route path="/about" element={<AboutPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
