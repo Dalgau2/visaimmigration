@@ -32,7 +32,7 @@ const OurAchievements = () => {
             >
               Our Great Achievements
             </Typography>
-            <Typography component="body2">
+            <Typography>
               We are dedicated to making your journey of discovery truly
               unforgettable. Our team of passionate travel experts is here to
               assist you in finding the destination of your dreams.

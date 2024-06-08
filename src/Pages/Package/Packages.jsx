@@ -10,6 +10,7 @@ import pic from "../../assets/Images/packageback.a9ad0eb3 (1).jpeg";
 import ImmigrationBreadCrumb from "../../Components/BreadCrumb/ImmigrationBreadCrumb";
 import { useParams } from "react-router";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const PackagePageOfImmigration = () => {
   // Getting Value (DynamicId) by using  UsePrams
@@ -359,7 +360,7 @@ const{title,country,price_per_person,visa_additional_details,visa_delivery_in_da
                 </Box>
               </Box>
             </Box>
-            <Box
+           <Box
               sx={{
                 height: { xs: "60px", lg: "90px" },
                 borderBottomLeftRadius: "inherit",
@@ -370,7 +371,9 @@ const{title,country,price_per_person,visa_additional_details,visa_delivery_in_da
                 alignItems: "center",
               }}
             >
+              <Link to="/new-apply">
               Button
+            </Link>
             </Box>
           </Box>
         </Box>

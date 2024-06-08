@@ -35,7 +35,7 @@ const NavBarOfDashboard=()=>{
         };
       
         return (
-          <AppBar elevation={0} position="static" sx={{background:"#f5f5f5",borderBottom:"1px solid gray"}} >
+          <AppBar elevation={0} position="static" sx={{background:"#f5f5f5",borderBottom:"1px solid lightgray",zIndex:2}} >
             <Container  >
               <Toolbar sx={{display:"flex",justifyContent:"space-between",height:"96px"}}>
                 <Typography
@@ -48,6 +48,9 @@ const NavBarOfDashboard=()=>{
                     display: { xs: 'none', md: 'flex' },
                     textTransform:"none",
                     textDecoration: 'none',
+                    fontWeight:"700",
+                    fontSize:"25px",
+                    color:"black"
                   }}
                 >
                   Hi  Gautam

@@ -1,12 +1,10 @@
 import ReuseableBackground from "../../ResuseableBackground";
 import { Box } from "@mui/material";
 import { useSelector } from "react-redux";
-import VisaCard from "../../Components/CardComponent/ReviewCard/VisaCard";
-import AllCategoryButton from "../../Button/AllCategoryButton";
 import packageimage from "../../assets/Images/package.5fa7b18c.png"
+import ExploarDestination from "../../Sections/DstnSection/Destination";
 const AllPackagePage = () => {
-  const visaData = useSelector((state) => state.data.data);
-  console.log(visaData, "datatatatata");
+  // const visaData = useSelector((state) => state.data.data);
   return (
     <Box>
       <Box>
@@ -18,12 +16,13 @@ const AllPackagePage = () => {
       </Box>
       <Box className="DestinationContainer">
         {/* Expolation Section  Start */}
-        <Box p={1}>
+        {/* <Box p={1}>
           {" "}
           <AllCategoryButton />
-        </Box>
+        </Box> */}
+        <ExploarDestination/>
         {/* End Pont of Button section */}
-        <Box
+        {/* <Box
           sx={{
             display: {
               xs: "grid",
@@ -53,7 +52,7 @@ const AllPackagePage = () => {
               </Box>
             );
           })}
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import logo from "../../assets/Images/Plane.webp";
 import data from "./NavOption.json";
 import { Paper } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./styleForNavBar.css";
 import "../ImmigrationNav/styleForNavBar.css";
 import SearchBarForImmigration from "../ReusebleSearchBar/searchBar";
@@ -24,6 +24,7 @@ function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [scrollDown, setSecrollDown] = useState(false);
+  const navigate=useNavigate()
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -47,7 +48,11 @@ function NavigationBar() {
     }
   };
   window.addEventListener("scroll", downScroll);
+// naviagte to mhome
+const handleClick=()=>{
+navigate(`/`)
 
+}
   return (
     <Box sx={{ height: "110px" }}>
       <AppBar
@@ -56,7 +61,7 @@ function NavigationBar() {
       >
         <Container maxWidth="xl">
           <Toolbar>
-            <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
+            <Box onClick={handleClick} sx={{ display: { xs: "none", md: "flex" }, mr: 1,cursor:"pointer" }}>
               <img src={logo} alt="logo" />
             </Box>
             <Typography
@@ -75,7 +80,7 @@ function NavigationBar() {
               Immigration
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } ,}}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -126,7 +131,7 @@ function NavigationBar() {
                 ))}
               </Menu>
             </Box>
-            <Box sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}>
+            <Box onClick={handleClick} sx={{ display: { xs: "flex", md: "none" }, mr: 1 ,cursor:"pointer"}}>
               <img src={logo} alt="logo" />
             </Box>
             {/* center logo whene xs screen */}

@@ -60,11 +60,11 @@ const SwiperOfReviewSection = () => {
       >
         {data.map((d,index) => {
           return (
-            <>
+            
               <SwiperSlide key={index} className="mySwiperSlideOfReview" >
                 <ReviewCardOfImmigration/>
               </SwiperSlide>
-            </>
+           
           );
         })}
       </Swiper>

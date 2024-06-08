@@ -2,7 +2,21 @@ import { Box, Typography, Paper, Button } from "@mui/material";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-const AllCategoryButton = ({onselectApplication}) => {
+import { useSearchParams } from "react-router-dom";
+const AllCategoryButton = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const handleClick=(name)=>{
+    if(name=="all"){
+      setSearchParams((params) => {
+        params.delete('duration');
+        return params;
+      });
+    }else{
+
+      setSearchParams({ duration: name });
+    }
+    
+  }
   
   return (
     <Box sx={{ textAlign: "center" }}>
@@ -35,7 +49,7 @@ const AllCategoryButton = ({onselectApplication}) => {
           >
             <Button
               variant="contained"
-              onClick={() => onselectApplication("all")}
+              onClick={() => handleClick("all")}
               sx={{
                 marginLeft: { lg: "2px", md: "2px", sm: "5px", xs: "5px" },
                 borderRadius: "40px",
@@ -51,7 +65,7 @@ const AllCategoryButton = ({onselectApplication}) => {
               <Typography>All</Typography>
             </Button>
             <Button
-              onClick={() => onselectApplication("instant")}
+              onClick={() => handleClick("instant")}
               variant="contained"
               sx={{
                 marginLeft: "5px",
@@ -69,7 +83,7 @@ const AllCategoryButton = ({onselectApplication}) => {
               <Typography> Instant</Typography>
             </Button>
             <Button
-              onClick={() => onselectApplication("inaweak")}
+              onClick={() => handleClick("inaweak")}
               variant="contained"
               sx={{
                 marginLeft: "5px",
@@ -87,7 +101,7 @@ const AllCategoryButton = ({onselectApplication}) => {
               <Typography> In a Weak</Typography>
             </Button>
             <Button
-              onClick={() => onselectApplication("inamonth")}
+              onClick={() => handleClick("inamonth")}
               variant="contained"
               sx={{
                 marginLeft: "5px",

@@ -4,27 +4,27 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 import LogoutIcon from "@mui/icons-material/Logout";
-import data from "../Components/ImmigrationNav/NavOption.json";
-import logoimage from "../assets/Images/empire-logo-white.webp";
+import logoimage from "../../../assets/Images/empire-logo-white.webp";
 import { Link } from "react-router-dom";
+import "./styleofAsidenav.css";
 
 let dashboardLink = [
   {
     id: "1",
     navlink: "Dashboard",
-    href: "/dasboard",
+    href: "/dashboard",
     icons: <DashboardIcon />,
   },
   {
     id: "2",
     navlink: "Application",
-    href: "/applicatin",
+    href: "/application",
     icons: <ListAltIcon />,
   },
   {
     id: "3",
-    navlink: "Applay for new",
-    href: "/apply",
+    navlink: "Apply for new",
+    href: "/new-apply",
     icons: <AssignmentIcon />,
   },
   {
@@ -50,9 +50,12 @@ const AsideBarOfDashboard = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        backgroundColor:"#1C1C1C ",
+        width:"300px",
+        height:"100vh",
       }}
     >
-      <Box sx={{ width: "100px", height: "80px", marginBottom: "10px" }}>
+      <Box sx={{ width: "100px" }}>
         <img
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
           src={logoimage}
@@ -84,9 +87,15 @@ const AsideBarOfDashboard = () => {
             alt="profile image"
           />
         </Box>
-        <Typography>Gautam</Typography>
-        <Typography>Email</Typography>
-        <Typography>Contactnumber</Typography>
+        <Typography sx={{ color: "white", fontWeight: "700" }}>
+          Gautam
+        </Typography>
+        <Typography sx={{ color: "white", fontWeight: "400" }}>
+          Email
+        </Typography>
+        <Typography sx={{ color: "white", fontWeight: "400" }}>
+          Contactnumber
+        </Typography>
       </Box>
       <Box
         sx={{
@@ -101,9 +110,33 @@ const AsideBarOfDashboard = () => {
       >
         {dashboardLink.map((dasnav) => {
           return (
-           
-              <a href={`${dasnav.href}`}>{dasnav.navlink}</a>
-            
+            <Box
+              sx={{
+                height: "50px",
+                alignItems: "center",
+                display: "flex",
+                justifyContent: "center",
+                ":hover": {
+                  color: "#FEC916",
+                  cursor: "pointer",
+                  borderRadius: "10px",
+                },
+              }}
+            >
+              <Link
+                to={`${dasnav.href}`}
+                style={{
+                  width: "100%",
+                  paddingLeft: "20px",
+                  textDecoration: "none",
+                  display: "flex",
+                }}
+                className="asideLink"
+              >
+                <Box sx={{ width: "50px" }}>{dasnav.icons}</Box>
+                {dasnav.navlink}
+              </Link>
+            </Box>
           );
         })}
       </Box>

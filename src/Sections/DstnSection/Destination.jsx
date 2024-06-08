@@ -1,55 +1,38 @@
 import { Box, Typography, Button, Paper } from "@mui/material";
-import SwiperCardForImmigration from "../../Components/CardComponent/CardForSwiper";
 import { useSelector } from "react-redux";
-// import data from "../../Components/DataOfImmigration/dataSet.json";
 import "./dsection.css";
 import VisaCard from "../../Components/CardComponent/ReviewCard/VisaCard";
 import AllCategoryButton from "../../Button/AllCategoryButton";
 import { useNavigate } from "react-router";
-import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
+import { useLocation } from "react-router";
 const ExploarDestination = () => {
-
-
+  const [searchParams, setSearchParams] = useSearchParams();
   const visaData = useSelector((state) => state.data.data);
-  const [filterData, setFilterData] = useState(visaData.slice(0, 10));
+  const pathname = useLocation();
   const navigate = useNavigate();
+  const packagepath = pathname.pathname;
+  const duration = searchParams.get("duration");
+  let filtered = visaData;
+  if (packagepath == "/packages" && duration == null) {
+    filtered = visaData;
+  } else if (duration == null) {
+    filtered = visaData.slice(0, 10);
+  } else if (duration === "instant") {
+    filtered = visaData.filter((data) => data.visa_in_days <= 1 && data.visa_in_days>=0);
+  } else if (duration === "inaweak") {
+    filtered = visaData.filter((data) => data.visa_in_days >= 7 && data.visa_in_days<=7);
+  } else if (duration === "inamonth") {
+    filtered = visaData.filter((data) => data.visa_in_days <= 30);
+  }
   const handleClickExploreAll = () => {
     navigate("/packages");
   };
-  const handelSelect = (category) => {
-    let filtered = visaData;
-    if (category === "instant") {
-      filtered = visaData.filter((item) => item.visa_in_days <= 1);
-    } else if (category === "inaweak") {
-      filtered = visaData.filter((item) => item.visa_in_days <= 7);
-    } else if (category === "inamonth") {
-      filtered = visaData.filter((item) => item.visa_in_days >= 30 && item.visa_in_days<=30);
-    }
-    setFilterData(filtered.slice(0, 10));
-  };
-  console.log(filterData);
   return (
     <Box className="DestinationContainer">
       {/* Expolation Section  Start */}
       <Box sx={{ textAlign: "center" }}>
-        <Typography
-          sx={{
-            fontFamily: "Cential",
-            fontSize: "48px",
-            fontWeight: "700",
-            paddingTop: { lg: "45px", md: "15px", sm: "25px", xs: "15px" },
-            fontSize: {
-              lg: "48px",
-              md: "48px",
-              sm: "48px",
-              xs: "28px",
-              xl: "130px",
-            },
-          }}
-        >
-          Explore Stays in Trending Destination
-        </Typography>
-        <AllCategoryButton onselectApplication={handelSelect} />
+        <AllCategoryButton />
       </Box>
       {/* End Pont of Button section */}
       <Box
@@ -75,7 +58,7 @@ const ExploarDestination = () => {
           },
         }}
       >
-        {filterData.map((data, index) => {
+        {filtered.map((data, index) => {
           return (
             <Box key={index}>
               <VisaCard data={data} />
@@ -91,20 +74,22 @@ const ExploarDestination = () => {
           height: "200px",
         }}
       >
-        <Button
-          sx={{
-            color: "black",
-            outline: "1px solid black",
-            textTransform: "none",
-            borderRadius: "20px",
-            width: "100px",
-            fontWeight: "400",
-            "&:hover": { color: "white", outline: "1px solid white" },
-          }}
-          onClick={handleClickExploreAll}
-        >
-          Explore all
-        </Button>
+        {packagepath == "/packages" ? null : (
+          <Button
+            sx={{
+              color: "black",
+              outline: "1px solid black",
+              textTransform: "none",
+              borderRadius: "20px",
+              width: "100px",
+              fontWeight: "400",
+              "&:hover": { color: "white", outline: "1px solid white" },
+            }}
+            onClick={handleClickExploreAll}
+          >
+            Explore all
+          </Button>
+        )}{" "}
       </Box>
     </Box>
   );

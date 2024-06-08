@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Provider } from "react-redux";
 import {store} from "./StoreForImmigration/store.jsx"
 
+
 export const theme = createTheme({
   palette: {
     primary: {

@@ -7,14 +7,14 @@ const OurServicesPage=()=>{
 return(
     <Box>
        <Box> <ReuseableBackground head={"Our Services"} body={"Streamlined services for your ease"} bgImage={servicesImage} /></Box>
-       <Box classname="serviceContainer" sx={{backgroundColor:"#FDD300"}}>
+       <Box className="serviceContainer" sx={{backgroundColor:"#FDD300"}}>
         {/* first Section of Service start */}
         <Box  sx={{display:"flex"}}>
             <Box p={4}sx={{width:"50%",paddingTop:"90px"}}>
                 <Typography variant="h2" sx={{fontWeight:"700",fontSize:"70px"}}>Visa Application</Typography>
                 <Typography pt={3}>Navigating the complexities of visa applications can be daunting, but our visa application service simplifies the process for you. Our experienced team guides you through the necessary paperwork, requirements, and procedures, making the journey toward obtaining your visa as seamless as possible. From visa consultation to document preparation, we're committed to helping you secure the necessary approvals for your international travels, allowing you to focus on the excitement of your upcoming adventure.</Typography>
             </Box>
-            <Box classname="imagePOfservice" sx={{width:"50%",display:"flex",justifyContent:"center",alignItems:"center",height:"500px"}}>
+            <Box className="imagePOfservice" sx={{width:"50%",display:"flex",justifyContent:"center",alignItems:"center",height:"500px"}}>
                 {/* FirstRing */}
                <Box component={Paper} elevation={3} sx={{width:"480px",height:"480px",borderRadius:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"white"}}>
                 {/* SecondRing */}
@@ -27,7 +27,7 @@ return(
         {/* End */}
         {/* Second Section Start */}
         <Box  sx={{display:"flex"}}>
-            <Box classname="imagePOfservice" sx={{width:"50%",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <Box className="imagePOfservice" sx={{width:"50%",display:"flex",justifyContent:"center",alignItems:"center"}}>
                 {/* FirstRing */}
                 <Box component={Paper} elevation={3} sx={{width:"480px",height:"480px",borderRadius:"100%",display:"flex",justifyContent:"center",alignItems:"center",backgroundColor:"white"}}>
                 {/* SecondRing */}

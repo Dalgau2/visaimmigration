@@ -23,7 +23,7 @@ const SwiperImmigration = () => {
       <Swiper
        
         autoplay={{
-          delay: 1000,
+          // delay: 1000,
           disableOnInteraction: false,
         }}
         grabCursor={true}
