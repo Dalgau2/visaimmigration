@@ -11,7 +11,7 @@ const DashBoardLayout = () => {
         </Box>
       </Box>
       <Box sx={{width:"80%",background:"#f5f5f5"}}>
-        <Box sx={{position:"sticky",top:"0%",bottom:"0%",zIndex:2}}><NavBarOfDashboard/></Box>
+        <Box sx={{position:"sticky",top:"0%",bottom:"0%",zIndex:2,left:"20%"}}><NavBarOfDashboard/></Box>
         <Box><Outlet/></Box>
       </Box>
     </Box>

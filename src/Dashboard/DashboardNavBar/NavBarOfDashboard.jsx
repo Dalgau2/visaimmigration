@@ -35,8 +35,8 @@ const NavBarOfDashboard=()=>{
         };
       
         return (
-          <AppBar elevation={0} position="static" sx={{background:"#f5f5f5",borderBottom:"1px solid lightgray",zIndex:2}} >
-            <Container  >
+          <AppBar elevation={0}  sx={{background:"#f5f5f5",borderBottom:"1px solid lightgray"}} >
+            <Container >
               <Toolbar sx={{display:"flex",justifyContent:"space-between",height:"96px"}}>
                 <Typography
                   variant="h6"
