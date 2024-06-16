@@ -5,6 +5,7 @@ import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 import { Provider } from "react-redux";
 import {store} from "./StoreForImmigration/store.jsx"
+import HomePageForImmigration from "./Pages/HomePage/Homepage.jsx";
 
 
 export const theme = createTheme({

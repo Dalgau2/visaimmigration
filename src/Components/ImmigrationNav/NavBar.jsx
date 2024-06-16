@@ -24,7 +24,7 @@ function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [scrollDown, setSecrollDown] = useState(false);
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -48,11 +48,10 @@ function NavigationBar() {
     }
   };
   window.addEventListener("scroll", downScroll);
-// naviagte to mhome
-const handleClick=()=>{
-navigate(`/`)
-
-}
+  // naviagte to mhome
+  const handleClick = () => {
+    navigate(`/`);
+  };
   return (
     <Box sx={{ height: "110px" }}>
       <AppBar
@@ -61,7 +60,14 @@ navigate(`/`)
       >
         <Container maxWidth="xl">
           <Toolbar>
-            <Box onClick={handleClick} sx={{ display: { xs: "none", md: "flex" }, mr: 1,cursor:"pointer" }}>
+            <Box
+              onClick={handleClick}
+              sx={{
+                display: { xs: "none", md: "flex" },
+                mr: 1,
+                cursor: "pointer",
+              }}
+            >
               <img src={logo} alt="logo" />
             </Box>
             <Typography
@@ -80,7 +86,7 @@ navigate(`/`)
               Immigration
             </Typography>
 
-            <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } ,}}>
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -112,31 +118,38 @@ navigate(`/`)
                 {/* xs=flex md=none side bar */}
                 {data.map((nav) => (
                   <MenuItem key={nav.id} onClick={handleCloseNavMenu}>
-                     <Link
-                    to={`${nav.href}`}
-                    key={nav.id}
-                    onClick={handleCloseNavMenu}
-                    style={{
-                      my: 2,
-                      color: "black",
-                      display: "block",
-                      textDecoration: "none",
-                      zIndex: 999,
-                    }}
-                    className="navBarLink"
-                  >
-                    {nav.navlink}
-                  </Link>
+                    <Link
+                      to={`${nav.href}`}
+                      key={nav.id}
+                      onClick={handleCloseNavMenu}
+                      style={{
+                        my: 2,
+                        color: "black",
+                        display: "block",
+                        textDecoration: "none",
+                        zIndex: 999,
+                      }}
+                      className="navBarLink"
+                    >
+                      {nav.navlink}
+                    </Link>
                   </MenuItem>
                 ))}
               </Menu>
             </Box>
-            <Box onClick={handleClick} sx={{ display: { xs: "flex", md: "none" }, mr: 1 ,cursor:"pointer"}}>
-              <img src={logo} alt="logo" />
+            <Box
+              onClick={handleClick}
+              sx={{
+                display: { xs: "flex", md: "none" },
+                mr: 1,
+                cursor: "pointer",
+              }}
+            >
+              <img src={logo} alt="logo" style={{width:"35px"}} />
             </Box>
             {/* center logo whene xs screen */}
             <Typography
-              variant="h5"
+              variant="h6"
               noWrap
               component="a"
               href="#app-bar-with-responsive-menu"

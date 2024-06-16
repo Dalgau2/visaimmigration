@@ -40,7 +40,7 @@ function App() {
                 <Route path="/contact" element={<ContactPageOfImmigration />} />
                 <Route path="/about" element={<AboutPage />} />
               </Route>
-              <Route path="/*" element={<RouteOfDashboard />} />
+              {/* <Route path="/*" element={<RouteOfDashboard />} /> */}
             </Routes>
           </ScrollToTop>
         </BrowserRouter>

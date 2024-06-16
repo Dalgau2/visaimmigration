@@ -50,10 +50,9 @@ const AsideBarOfDashboard = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        backgroundColor:"#1C1C1C ",
-        width:"300px",
-        height:"100vh",
-        
+        backgroundColor: "#1C1C1C ",
+        width: "300px",
+        height: "100vh",
       }}
     >
       <Box sx={{ width: "100px" }}>

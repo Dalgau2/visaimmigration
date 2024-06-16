@@ -57,7 +57,7 @@
    /* height:1; */
   }
 }
-@media (min-width:425px) and (max-width:1024px) {
+@media (min-width:320px) and (max-width:1024px) {
   .AchivementSection {
     /* background-color: rgb(10, 12, 11); */
    display: flex;
@@ -68,5 +68,6 @@
   background-size:cover;
   background-position: center;
   align-items: center;
+  
   }
 }
