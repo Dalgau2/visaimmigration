@@ -38,10 +38,10 @@ const AboutPage = () => {
               flexDirection: "column",
             }}
           >
-            <Box>
-              <img src={logoImage} alt="logo Image" />
+            <Box sx={{height:{xs:"150px"}}}>
+              <img src={logoImage} alt="logo Image" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
             </Box>
-            <Typography variant="h2" sx={{ fontFamily: "cential" }}>
+            <Typography variant="h4" mt={2} sx={{ fontFamily: "cential" ,fontSize:{xs:"18px"}}}>
               About Empire Immigration
             </Typography>
           </Box>
@@ -58,7 +58,7 @@ const AboutPage = () => {
           </Box>
           <Box>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Typography variant="h2" sx={{ fontFamily: "cential" }}>
+              <Typography variant="h2"  sx={{ fontFamily: "cential" ,fontSize:{xs:"28px"}}}>
                 Our Commitment
               </Typography>
             </Box>
@@ -84,14 +84,14 @@ const AboutPage = () => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h2" sx={{ fontFamily: "cential" }}>
+          <Typography variant="h2"  sx={{ fontFamily: "cential" ,fontSize:{xs:"38px"}}}>
             Our Services
           </Typography>
         </Box>
         <Box
         p={2}
           sx={{
-            display: "flex",
+            display:{xs:"block",sm: "flex"},
             justifyContent: "space-around",
             alignItems: "center",
             marginTop: "20px",
@@ -100,7 +100,7 @@ const AboutPage = () => {
           <Box
             p={2}
             sx={{
-              width: "600px",
+              width: {xs:"240px",md:"600px"},
               border: "1px solid #FEC916",
               borderRadius: "20px",
             }}
@@ -129,7 +129,7 @@ const AboutPage = () => {
           <Box
             p={2}
             sx={{
-              width: "600px",
+              width: {xs:"240px",md:"600px"},
               border: "1px solid #FEC916",
               borderRadius: "20px",
             }}

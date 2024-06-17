@@ -28,11 +28,12 @@ const navigate=useNavigate()
           maxWidth: { xl: "400px", lg: "300px" },
           height: {
             xl: "400px",
-            lg: "340px",
             sm: "340px",
             md: "340px",
             xs: "340px",
             margin: "10px",
+            lg: "340px",
+            xl:"340px"
           },
           borderRadius: "20px",
         }}
